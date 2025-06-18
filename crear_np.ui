@@ -234,6 +234,21 @@
        <height>22</height>
       </rect>
      </property>
+     <item>
+      <property name="text">
+       <string>Compras</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Logistica</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ventas</string>
+      </property>
+     </item>
     </widget>
    </widget>
    <widget class="QComboBox" name="boxSucursalNP">
