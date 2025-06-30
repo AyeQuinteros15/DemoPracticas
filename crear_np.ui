@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>803</width>
-    <height>827</height>
+    <height>730</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1366</width>
+    <height>800</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Crear Nota de Pedido</string>
@@ -272,7 +284,7 @@
       <x>10</x>
       <y>230</y>
       <width>781</width>
-      <height>231</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -297,8 +309,8 @@
    <widget class="QPushButton" name="btnAgregarItem">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>470</y>
+      <x>690</x>
+      <y>370</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -314,7 +326,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>530</y>
+      <y>440</y>
       <width>781</width>
       <height>91</height>
      </rect>
@@ -326,8 +338,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>510</y>
+      <x>10</x>
+      <y>420</y>
       <width>111</width>
       <height>16</height>
      </rect>
@@ -345,8 +357,8 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>650</y>
+      <x>90</x>
+      <y>570</y>
       <width>181</width>
       <height>81</height>
      </rect>
@@ -386,8 +398,8 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>630</y>
+      <x>140</x>
+      <y>550</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -406,7 +418,7 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>650</y>
+      <y>570</y>
       <width>181</width>
       <height>81</height>
      </rect>
@@ -446,8 +458,8 @@
    <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>650</y>
+      <x>550</x>
+      <y>570</y>
       <width>181</width>
       <height>81</height>
      </rect>
@@ -488,7 +500,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>630</y>
+      <y>550</y>
       <width>121</width>
       <height>16</height>
      </rect>
@@ -507,7 +519,7 @@
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>630</y>
+      <y>550</y>
       <width>71</width>
       <height>16</height>
      </rect>
@@ -525,8 +537,8 @@
    <widget class="QPushButton" name="btnAdjArchivoNP">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>470</y>
+      <x>10</x>
+      <y>370</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -541,8 +553,8 @@
    <widget class="QLineEdit" name="txtAdjArchivo">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>470</y>
+      <x>120</x>
+      <y>370</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -551,8 +563,8 @@
    <widget class="QPushButton" name="btnFirmarSolicitante_NP">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>740</y>
+      <x>140</x>
+      <y>660</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -571,7 +583,7 @@
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>740</y>
+      <y>660</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -589,8 +601,8 @@
    <widget class="QPushButton" name="btnFirmarCompras_NP">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>740</y>
+      <x>600</x>
+      <y>660</y>
       <width>75</width>
       <height>24</height>
      </rect>
