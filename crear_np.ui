@@ -298,7 +298,17 @@
     </property>
     <column>
      <property name="text">
-      <string>Item</string>
+      <string>Cod. Item</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Categoria</string>
      </property>
     </column>
     <column>
