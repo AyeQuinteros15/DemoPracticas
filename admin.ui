@@ -113,7 +113,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../img/imagenes.qrc">:/xy/logo.jpg</pixmap>
+     <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/logo.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -231,7 +231,7 @@
    <widget class="QPushButton" name="btnHistorialAdmin">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>200</x>
       <y>660</y>
       <width>221</width>
       <height>51</height>
@@ -250,7 +250,32 @@
      <string notr="true">background-color: rgb(250, 250, 40);</string>
     </property>
     <property name="text">
-     <string>Ver Historial de Trazabilidad</string>
+     <string>Ir a Historial de Trazabilidad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGestionStockAdmin">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>660</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 250, 40);</string>
+    </property>
+    <property name="text">
+     <string>Ir a Gestion de Stock</string>
     </property>
    </widget>
   </widget>
@@ -279,7 +304,7 @@
   </action>
  </widget>
  <resources>
-  <include location="../img/imagenes.qrc"/>
+  <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>
