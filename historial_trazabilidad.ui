@@ -144,17 +144,17 @@
     </column>
     <column>
      <property name="text">
-      <string>New Column</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
       <string>Fecha Generacion</string>
      </property>
     </column>
     <column>
      <property name="text">
       <string>Observada Por</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha Observacion</string>
      </property>
     </column>
     <column>
@@ -213,7 +213,7 @@
  </widget>
  <resources>
   <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc"/>
-  <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/.venv/img/imagenes.qrc"/>
+  <include location="img/imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>
