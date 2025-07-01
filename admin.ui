@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>980</width>
-    <height>725</height>
+    <height>697</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -33,7 +33,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>20</y>
+      <y>10</y>
       <width>221</width>
       <height>16</height>
      </rect>
@@ -52,7 +52,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>50</y>
+      <y>30</y>
       <width>941</width>
       <height>221</height>
      </rect>
@@ -100,7 +100,7 @@
     <property name="geometry">
      <rect>
       <x>850</x>
-      <y>280</y>
+      <y>260</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -112,30 +112,11 @@
      <string>Editar</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>790</x>
-      <y>10</y>
-      <width>171</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/logo.jpg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnCrearNP_Admin">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>280</y>
+      <y>260</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -151,7 +132,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>320</y>
+      <y>300</y>
       <width>251</width>
       <height>21</height>
      </rect>
@@ -170,7 +151,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>360</y>
+      <y>330</y>
       <width>941</width>
       <height>221</height>
      </rect>
@@ -228,7 +209,7 @@
     <property name="geometry">
      <rect>
       <x>850</x>
-      <y>590</y>
+      <y>560</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -244,7 +225,7 @@
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>620</y>
+      <y>590</y>
       <width>221</width>
       <height>51</height>
      </rect>
@@ -268,8 +249,8 @@
    <widget class="QPushButton" name="btnGestionStockAdmin">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>620</y>
+      <x>510</x>
+      <y>590</y>
       <width>221</width>
       <height>51</height>
      </rect>
