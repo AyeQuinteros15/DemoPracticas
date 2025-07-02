@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="btnFiltrarProveedores">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>13</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Filtrar</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtFiltrarProveedores">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>20</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSeleccionarProveedores">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>450</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Seleccionar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>PROVEEDORES</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tablaSeleccionarProveedores">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>531</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Razon Social</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nombre</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cod. ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Categoria</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Provincia</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
