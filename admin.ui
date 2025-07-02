@@ -208,7 +208,7 @@
    <widget class="QPushButton" name="btnEditarTablaOCactiva">
     <property name="geometry">
      <rect>
-      <x>850</x>
+      <x>50</x>
       <y>560</y>
       <width>75</width>
       <height>24</height>
@@ -218,7 +218,7 @@
      <string notr="true">background-color: rgb(248, 248, 248);</string>
     </property>
     <property name="text">
-     <string>Editar</string>
+     <string>Abrir OC</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnHistorialAdmin">
@@ -269,6 +269,22 @@
     </property>
     <property name="text">
      <string>Ir a Gestion de Stock</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEditarTablaOC">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>560</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 248, 248);</string>
+    </property>
+    <property name="text">
+     <string>Editar</string>
     </property>
    </widget>
   </widget>
