@@ -306,6 +306,6 @@ ADD razon_social VARCHAR(100),
 ADD localidad VARCHAR(50),
 ADD provincia VARCHAR(50),
 ADD codigo_postal VARCHAR(10),
-ADD condicion_iva VARCHAR(30),
 ADD direccion VARCHAR(150),
-ADD email VARCHAR(100);
+ADD contacto VARCHAR(50),
+ADD condicion_iibb VARCHAR(100);
