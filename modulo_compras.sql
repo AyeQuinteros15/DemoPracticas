@@ -295,3 +295,6 @@ select * from ordenes_compra;
 select * from stock;
 
 select * from categorias_productos;
+
+update usuarios set firma_img = 'firmas/user1.jpg' where usuario = 'admin';
+update usuarios set firma_img = 'firmas/user2.jpeg' where usuario = 'operador';
