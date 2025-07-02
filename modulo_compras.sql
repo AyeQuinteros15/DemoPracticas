@@ -308,4 +308,5 @@ ADD provincia VARCHAR(50),
 ADD codigo_postal VARCHAR(10),
 ADD direccion VARCHAR(150),
 ADD contacto VARCHAR(50),
-ADD condicion_iibb VARCHAR(100);
+ADD condicion_iibb VARCHAR(100),
+ADD celular Varchar(30);
