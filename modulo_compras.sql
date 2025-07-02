@@ -298,3 +298,14 @@ select * from categorias_productos;
 
 update usuarios set firma_img = 'firmas/user1.jpg' where usuario = 'admin';
 update usuarios set firma_img = 'firmas/user2.jpeg' where usuario = 'operador';
+
+ALTER TABLE proveedores 
+DROP COLUMN apellido_proveedor,
+DROP COLUMN dni_prov,
+ADD razon_social VARCHAR(100),
+ADD localidad VARCHAR(50),
+ADD provincia VARCHAR(50),
+ADD codigo_postal VARCHAR(10),
+ADD condicion_iva VARCHAR(30),
+ADD direccion VARCHAR(150),
+ADD email VARCHAR(100);
