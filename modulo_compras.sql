@@ -310,3 +310,9 @@ ADD direccion VARCHAR(150),
 ADD contacto VARCHAR(50),
 ADD condicion_iibb VARCHAR(100),
 ADD celular Varchar(30);
+
+ALTER TABLE ordenes_compra
+ADD COLUMN forma_pago VARCHAR(50),
+ADD COLUMN cbu VARCHAR(30),
+ADD COLUMN titular_cuenta VARCHAR(100),
+ADD COLUMN lugar_entrega VARCHAR(150);
