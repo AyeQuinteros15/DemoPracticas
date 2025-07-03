@@ -316,3 +316,23 @@ ADD COLUMN forma_pago VARCHAR(50),
 ADD COLUMN cbu VARCHAR(30),
 ADD COLUMN titular_cuenta VARCHAR(100),
 ADD COLUMN lugar_entrega VARCHAR(150);
+
+CREATE TABLE historico_compras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_compra DATE NOT NULL,
+    producto_id INT NOT NULL,
+    cantidad INT NOT NULL,
+    precio_unitario DECIMAL(10,2) NOT NULL,
+    precio_total DECIMAL(10,2),
+    proveedor_id INT NOT NULL,
+    sucursal_id INT NOT NULL,
+    categoria_producto_id INT,
+    usuario_id INT NOT NULL,
+    medio_pago VARCHAR(30),
+    FOREIGN KEY (producto_id) REFERENCES productos(id),
+    FOREIGN KEY (proveedor_id) REFERENCES proveedores(id),
+    FOREIGN KEY (sucursal_id) REFERENCES sucursales(id),
+    FOREIGN KEY (categoria_producto_id) REFERENCES categorias_productos(id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
