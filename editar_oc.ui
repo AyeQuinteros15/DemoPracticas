@@ -552,9 +552,9 @@
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>240</y>
+      <y>250</y>
       <width>81</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1277,6 +1277,22 @@
       <string/>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="btnAgregarEntregaPago">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>220</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 239, 239);</string>
+    </property>
+    <property name="text">
+     <string>Agregar</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
