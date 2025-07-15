@@ -40,8 +40,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>391</width>
-      <height>161</height>
+      <width>291</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="text">
@@ -57,8 +57,8 @@
    <widget class="QDateEdit" name="fechaEntregaCrearNP">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>140</y>
+      <x>480</x>
+      <y>90</y>
       <width>110</width>
       <height>22</height>
      </rect>
@@ -67,15 +67,15 @@
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>110</y>
+      <x>320</x>
+      <y>70</y>
       <width>71</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -86,27 +86,27 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>80</y>
-      <width>71</width>
+      <x>320</x>
+      <y>50</y>
+      <width>131</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
     </property>
     <property name="text">
-     <string>Fecha:</string>
+     <string>Fecha de generacion:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>10</y>
+      <x>400</x>
+      <y>0</y>
       <width>161</width>
       <height>21</height>
      </rect>
@@ -125,15 +125,15 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>140</y>
-      <width>191</width>
+      <x>320</x>
+      <y>90</y>
+      <width>151</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -141,28 +141,18 @@
      <string>Fecha entrega requerida:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txtNumNP">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>50</y>
-      <width>191</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>50</y>
-      <width>71</width>
+      <x>320</x>
+      <y>30</y>
+      <width>61</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>10</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -170,127 +160,13 @@
      <string>Nro. NP:</string>
     </property>
    </widget>
-   <widget class="QDateEdit" name="fechaCrearNP">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>80</y>
-      <width>110</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QTableWidget" name="tablaItemCrearNP">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>170</y>
       <width>781</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QLineEdit" name="txtGerenteSolicitante">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>191</width>
-       <height>21</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>141</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Gerente Solicitante:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>510</x>
-       <y>20</y>
-       <width>51</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Sector:</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="boxSectorNP">
-     <property name="geometry">
-      <rect>
-       <x>570</x>
-       <y>20</y>
-       <width>191</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QComboBox" name="boxSucursalNP">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>110</y>
-      <width>191</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>Tarjeta Sucredito</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Banco Sucredito Regional</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Edificio Pje Bertres</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Edificio Santa Fe</string>
-     </property>
-    </item>
-   </widget>
-   <widget class="QTableWidget" name="tablaItemCrearNP">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>230</y>
-      <width>781</width>
-      <height>131</height>
+      <height>181</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -321,6 +197,11 @@
       <string>Cantidad</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Stock Actual</string>
+     </property>
+    </column>
    </widget>
    <widget class="QPushButton" name="btnAgregarItem">
     <property name="geometry">
@@ -343,8 +224,8 @@
      <rect>
       <x>10</x>
       <y>440</y>
-      <width>781</width>
-      <height>91</height>
+      <width>581</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -373,10 +254,10 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>570</y>
+      <x>110</x>
+      <y>550</y>
       <width>181</width>
-      <height>81</height>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -410,12 +291,25 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="lblFechaFirmaS_NP">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fecha - Hora</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>550</y>
+      <x>160</x>
+      <y>530</y>
       <width>81</width>
       <height>16</height>
      </rect>
@@ -433,10 +327,10 @@
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>570</y>
+      <x>510</x>
+      <y>550</y>
       <width>181</width>
-      <height>81</height>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -470,53 +364,25 @@
       <bool>true</bool>
      </property>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>570</y>
-      <width>181</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QLabel" name="lblFirmaCompras_NP">
+    <widget class="QLabel" name="lblFechaFirmaGG_NP">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>10</y>
+       <y>70</y>
        <width>141</width>
-       <height>61</height>
+       <height>16</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <bold>false</bold>
-      </font>
-     </property>
      <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
+      <string>Fecha - Hora</string>
      </property>
     </widget>
    </widget>
    <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>550</y>
+      <x>540</x>
+      <y>530</y>
       <width>121</width>
       <height>16</height>
      </rect>
@@ -531,25 +397,6 @@
      <string>Gerencia General</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_19">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>550</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Compras</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnAdjArchivoNP">
     <property name="geometry">
      <rect>
@@ -560,27 +407,17 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true">background-color: rgb(239, 239, 239);</string>
     </property>
     <property name="text">
-     <string>Adjuntar archivos</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtAdjArchivo">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>370</y>
-      <width>321</width>
-      <height>31</height>
-     </rect>
+     <string>Adjuntar Archivo</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnFirmarSolicitante_NP">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>660</y>
+      <x>160</x>
+      <y>650</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -598,8 +435,8 @@
    <widget class="QPushButton" name="btnFirmarGerencia_NP">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>660</y>
+      <x>570</x>
+      <y>650</y>
       <width>75</width>
       <height>24</height>
      </rect>
@@ -614,23 +451,176 @@
      <string>Firmar</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnFirmarCompras_NP">
+   <widget class="QLabel" name="lblSucursalUsuario_NP">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>660</y>
-      <width>75</width>
+      <x>380</x>
+      <y>70</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sucusal Usuario</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblNumeroNP_NP">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>30</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Numero Automatico NP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFechaAutomatica_NP">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fecha automatica</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gerente Solicitante:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblNombreUsuario_NP">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre Usuario</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>140</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sector:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblSectorUsuario_NP">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>140</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sector Usuario</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnVerArchivos_NP">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>370</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);</string>
+    </property>
+    <property name="text">
+     <string>Ver Archivos Adjuntos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGuardarCambiosItems_NP">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>370</y>
+      <width>111</width>
       <height>24</height>
      </rect>
     </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(216, 216, 216);</string>
+     <string notr="true">background-color: rgb(225, 225, 225);</string>
     </property>
     <property name="text">
-     <string>Firmar</string>
+     <string>Guardar Cambios</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNotas_NP">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>460</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(223, 209, 10);</string>
+    </property>
+    <property name="text">
+     <string>NOTAS NP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEstadoNP_NP">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>40</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>ESTADO NP</string>
     </property>
    </widget>
   </widget>
@@ -672,7 +662,7 @@
  </widget>
  <resources>
   <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc"/>
-  <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc"/>
+  <include location="img/imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>
