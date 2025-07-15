@@ -1,203 +1,366 @@
--- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
---
--- Host: localhost    Database: modulocompras_demo
--- ------------------------------------------------------
--- Server version	8.0.23
+-- CREAR BASE DE DATOS
+CREATE DATABASE IF NOT EXISTS modulo_compras;
+USE modulo_compras;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+-- PROVINCIAS
+CREATE TABLE provincias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_provincia VARCHAR(100) NOT NULL UNIQUE
+);
 
---
--- Dumping data for table `categorias_productos`
---
+-- LOCALIDADES
+CREATE TABLE localidades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_localidad VARCHAR(100) NOT NULL,
+    provincia_id INT NOT NULL,
+    FOREIGN KEY (provincia_id) REFERENCES provincias(id)
+);
 
-LOCK TABLES `categorias_productos` WRITE;
-/*!40000 ALTER TABLE `categorias_productos` DISABLE KEYS */;
-/*!40000 ALTER TABLE `categorias_productos` ENABLE KEYS */;
-UNLOCK TABLES;
+-- DIRECCIONES
+CREATE TABLE direcciones (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    direccion VARCHAR(150),
+    codigo_postal VARCHAR(10),
+    localidad_id INT NOT NULL,
+    FOREIGN KEY (localidad_id) REFERENCES localidades(id)
+);
 
---
--- Dumping data for table `entregas`
---
+-- PERFILES
+CREATE TABLE perfiles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_perfil VARCHAR(30) NOT NULL UNIQUE
+);
 
-LOCK TABLES `entregas` WRITE;
-/*!40000 ALTER TABLE `entregas` DISABLE KEYS */;
-INSERT INTO `entregas` VALUES (1,1,'Resmas A4',5,3,'2025-06-16 22:03:52');
-/*!40000 ALTER TABLE `entregas` ENABLE KEYS */;
-UNLOCK TABLES;
+-- SUCURSALES
+CREATE TABLE sucursales (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_suc VARCHAR(50) NOT NULL UNIQUE,
+    direccion_id INT,
+    FOREIGN KEY (direccion_id) REFERENCES direcciones(id)
+);
 
---
--- Dumping data for table `estados_np`
---
+-- SECTORES
+CREATE TABLE sectores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_sector VARCHAR(50) NOT NULL UNIQUE
+);
 
-LOCK TABLES `estados_np` WRITE;
-/*!40000 ALTER TABLE `estados_np` DISABLE KEYS */;
-INSERT INTO `estados_np` VALUES (3,'Aprobada'),(1,'Generada'),(2,'Observada'),(4,'Rechazada');
-/*!40000 ALTER TABLE `estados_np` ENABLE KEYS */;
-UNLOCK TABLES;
+-- USUARIOS
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_usuario VARCHAR(40) NOT NULL,
+    apellido_usuario VARCHAR(40) NOT NULL,
+    usuario VARCHAR(30) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    perfil_id INT NOT NULL,
+    sucursal_id INT,
+    firma_img VARCHAR(255),
+    firma_fecha DATETIME,
+    FOREIGN KEY (perfil_id) REFERENCES perfiles(id),
+    FOREIGN KEY (sucursal_id) REFERENCES sucursales(id)
+);
 
---
--- Dumping data for table `estados_oc`
---
+-- ESTADOS DE NOTAS DE PEDIDO
+CREATE TABLE estados_np (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    estados_np VARCHAR(30) NOT NULL UNIQUE
+);
 
-LOCK TABLES `estados_oc` WRITE;
-/*!40000 ALTER TABLE `estados_oc` DISABLE KEYS */;
-INSERT INTO `estados_oc` VALUES (4,'Aprobación por monto 1'),(5,'Aprobación por monto 2'),(6,'Aprobación por monto 3'),(2,'En circuito'),(7,'Enviada al proveedor'),(1,'Generada'),(3,'Observada'),(8,'OC Recibida'),(9,'Rechazada');
-/*!40000 ALTER TABLE `estados_oc` ENABLE KEYS */;
-UNLOCK TABLES;
+-- ESTADOS DE ORDENES DE COMPRA
+CREATE TABLE estados_oc (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    estados_oc VARCHAR(40) NOT NULL UNIQUE
+);
 
---
--- Dumping data for table `facturas`
---
+-- CATEGORÍAS DE PRODUCTOS
+CREATE TABLE categorias_productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    categoria_prod VARCHAR(50) NOT NULL UNIQUE,
+    descripcion TEXT
+);
 
-LOCK TABLES `facturas` WRITE;
-/*!40000 ALTER TABLE `facturas` DISABLE KEYS */;
-INSERT INTO `facturas` VALUES (1,1,'F001-12345','R001-54321','archivos/facturas/F001-12345.pdf','2025-06-23');
-/*!40000 ALTER TABLE `facturas` ENABLE KEYS */;
-UNLOCK TABLES;
+-- PRODUCTOS
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codigo_producto VARCHAR(30) UNIQUE NOT NULL,
+    nom_producto VARCHAR(50) NOT NULL,
+    descripcion_producto TEXT,
+    categoria_id INT,
+    FOREIGN KEY (categoria_id) REFERENCES categorias_productos(id)
+);
 
---
--- Dumping data for table `historial_np`
---
+-- PROVEEDORES
+CREATE TABLE proveedores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom_proveedor VARCHAR(40) NOT NULL,
+    razon_social VARCHAR(100),
+    direccion_id INT,
+    contacto VARCHAR(50),
+    celular VARCHAR(30),
+    condicion_iibb VARCHAR(50),
+    cbu_alias VARCHAR(30),
+    archivo_cbu VARCHAR(255),
+    FOREIGN KEY (direccion_id) REFERENCES direcciones(id)
+);
 
-LOCK TABLES `historial_np` WRITE;
-/*!40000 ALTER TABLE `historial_np` DISABLE KEYS */;
-INSERT INTO `historial_np` VALUES (1,1,1,1,'2025-06-16 22:02:01','Creada por el usuario'),(2,1,2,2,'2025-06-16 22:02:01','Observada por falta de precio estimado');
-/*!40000 ALTER TABLE `historial_np` ENABLE KEYS */;
-UNLOCK TABLES;
+-- CONTROL DE STOCK
+CREATE TABLE stock (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sucursal_id INT NOT NULL,
+    producto_id INT,
+    producto VARCHAR(60),
+    cantidad INT DEFAULT 0,
+    minimo INT DEFAULT 0,
+    FOREIGN KEY (sucursal_id) REFERENCES sucursales(id),
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
 
---
--- Dumping data for table `historial_oc`
---
+-- COTEJO DE PRESUPUESTOS (se define antes de notas_pedido para evitar errores)
+CREATE TABLE cotejo_presupuestos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nota_pedido_id INT,  -- esta FK se define luego
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    observaciones TEXT,
+    proveedor_sugerido_id INT,
+    FOREIGN KEY (proveedor_sugerido_id) REFERENCES proveedores(id)
+);
 
-LOCK TABLES `historial_oc` WRITE;
-/*!40000 ALTER TABLE `historial_oc` DISABLE KEYS */;
-INSERT INTO `historial_oc` VALUES (1,1,1,3,'2025-06-16 22:03:52','Orden generada'),(2,1,2,2,'2025-06-16 22:03:52','Enviada a proveedor');
-/*!40000 ALTER TABLE `historial_oc` ENABLE KEYS */;
-UNLOCK TABLES;
+-- NOTAS DE PEDIDO (puede referenciar ahora cotejo_presupuestos sin error)
+CREATE TABLE notas_pedido (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero VARCHAR(20) UNIQUE NOT NULL,
+    usuario_id INT NOT NULL,
+    sucursal_id INT NOT NULL,
+    sector_id INT NOT NULL,
+    descripcion TEXT,
+    prioridad BOOLEAN DEFAULT FALSE,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha_entrega DATE,
+    gerente_solicitante VARCHAR(50),
+    observaciones TEXT,
+    archivo_adjunto VARCHAR(255),
+    fecha_observacion TIMESTAMP NULL,
+    fecha_aprobacion TIMESTAMP NULL,
+    id_observador INT,
+    cotejo_presupuesto_id INT,
+    responsable_solicitud VARCHAR(100),
+    stock_regional INT,
+    motivo_rechazo TEXT,
+    estado_asignacion BOOLEAN DEFAULT FALSE,
+    fecha_firma TIMESTAMP,
+    firma_usuario_id INT,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    FOREIGN KEY (sucursal_id) REFERENCES sucursales(id),
+    FOREIGN KEY (sector_id) REFERENCES sectores(id),
+    FOREIGN KEY (id_observador) REFERENCES usuarios(id),
+    FOREIGN KEY (cotejo_presupuesto_id) REFERENCES cotejo_presupuestos(id),
+    FOREIGN KEY (firma_usuario_id) REFERENCES usuarios(id)
+);
 
---
--- Dumping data for table `items_np`
---
+-- ACTUALIZACIÓN: se agrega FK ahora que ya existe notas_pedido
+ALTER TABLE cotejo_presupuestos
+ADD CONSTRAINT fk_cotejo_np FOREIGN KEY (nota_pedido_id) REFERENCES notas_pedido(id);
 
-LOCK TABLES `items_np` WRITE;
-/*!40000 ALTER TABLE `items_np` DISABLE KEYS */;
-/*!40000 ALTER TABLE `items_np` ENABLE KEYS */;
-UNLOCK TABLES;
+-- ITEMS DE NOTA DE PEDIDO
+CREATE TABLE items_np (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nota_pedido_id INT NOT NULL,
+    producto_id INT,
+    descripcion TEXT NOT NULL,
+    cantidad INT NOT NULL,
+    FOREIGN KEY (nota_pedido_id) REFERENCES notas_pedido(id),
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
 
---
--- Dumping data for table `items_oc`
---
+-- HISTORIAL DE NOTAS DE PEDIDO
+CREATE TABLE historial_np (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nota_pedido_id INT NOT NULL,
+    estado_id INT NOT NULL,
+    usuario_id INT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    observaciones TEXT,
+    FOREIGN KEY (nota_pedido_id) REFERENCES notas_pedido(id),
+    FOREIGN KEY (estado_id) REFERENCES estados_np(id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
 
-LOCK TABLES `items_oc` WRITE;
-/*!40000 ALTER TABLE `items_oc` DISABLE KEYS */;
-INSERT INTO `items_oc` VALUES (1,1,10,1500.00,NULL),(2,1,50,100.00,NULL);
-/*!40000 ALTER TABLE `items_oc` ENABLE KEYS */;
-UNLOCK TABLES;
+-- COTEJO - ITEMS
+CREATE TABLE cotejo_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cotejo_presupuesto_id INT NOT NULL,
+    descripcion TEXT NOT NULL,
+    cantidad DECIMAL(10,2),
+    unidad VARCHAR(20),
+    proveedor_id INT,
+    precio_unitario DECIMAL(12,2),
+    precio_total DECIMAL(12,2),
+    FOREIGN KEY (cotejo_presupuesto_id) REFERENCES cotejo_presupuestos(id),
+    FOREIGN KEY (proveedor_id) REFERENCES proveedores(id)
+);
 
---
--- Dumping data for table `notas_pedido`
---
+-- COTEJO - DATOS POR PROVEEDOR
+CREATE TABLE cotejo_proveedores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cotejo_presupuesto_id INT NOT NULL,
+    proveedor_id INT NOT NULL,
+    condicion_fiscal VARCHAR(100),
+    forma_pago VARCHAR(100),
+    plazo_entrega VARCHAR(100),
+    lugar_entrega VARCHAR(100),
+    FOREIGN KEY (cotejo_presupuesto_id) REFERENCES cotejo_presupuestos(id),
+    FOREIGN KEY (proveedor_id) REFERENCES proveedores(id)
+);
 
-LOCK TABLES `notas_pedido` WRITE;
-/*!40000 ALTER TABLE `notas_pedido` DISABLE KEYS */;
-INSERT INTO `notas_pedido` VALUES (1,'NP-TS-0001',1,'Pedido de resmas y artículos de oficina',1,'2025-06-16 22:02:01','2025-06-20','Martín Pérez','Entregar antes del cierre contable','archivos/NP-TS-0001.jpg',1),(2,'NP-TS-0002',2,'Compra de cartuchos e insumos de impresión',0,'2025-06-16 22:02:01','2025-06-21','Sofía Álvarez',NULL,NULL,2);
-/*!40000 ALTER TABLE `notas_pedido` ENABLE KEYS */;
-UNLOCK TABLES;
+-- ORDENES DE COMPRA
+CREATE TABLE ordenes_compra (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero VARCHAR(20) UNIQUE NOT NULL,
+    nota_pedido_id INT NOT NULL,
+    proveedor_id INT,
+    numero_cotizacion VARCHAR(30),
+    fecha_emision TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha_recepcion DATE,
+    observaciones TEXT,
+    archivo_pdf VARCHAR(255),
+    archivo_adjunto VARCHAR(255),
+    descuento_porcentaje INT,
+    iva_porcentaje DECIMAL(5,2),
+    otro_impuesto_porcentaje DECIMAL(5,2),
+    fecha_vencimiento DATE,
+    creado_por INT,
+    total_factura DECIMAL(12,2),
+    fecha_observacion TIMESTAMP NULL,
+    fecha_aprobacion TIMESTAMP NULL,
+    id_observador INT,
+    forma_pago VARCHAR(50),
+    cbu VARCHAR(30),
+    titular_cuenta VARCHAR(100),
+    lugar_entrega VARCHAR(150),
+    estado_notificado BOOLEAN DEFAULT FALSE,
+    observacion_interna TEXT,
+    orden_compra_anterior_id INT,
+    requiere_entrega_rapida BOOLEAN DEFAULT FALSE,
+    orden_compra_clonada_de_id INT,
+    FOREIGN KEY (nota_pedido_id) REFERENCES notas_pedido(id),
+    FOREIGN KEY (proveedor_id) REFERENCES proveedores(id),
+    FOREIGN KEY (creado_por) REFERENCES usuarios(id),
+    FOREIGN KEY (id_observador) REFERENCES usuarios(id),
+    FOREIGN KEY (orden_compra_anterior_id) REFERENCES ordenes_compra(id),
+    FOREIGN KEY (orden_compra_clonada_de_id) REFERENCES ordenes_compra(id)
+);
 
---
--- Dumping data for table `ordenes_compra`
---
+-- ITEMS DE ORDEN DE COMPRA
+CREATE TABLE items_oc (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orden_compra_id INT NOT NULL,
+    producto_id INT,
+    descripcion TEXT NOT NULL,
+    cantidad INT NOT NULL,
+    precio_unitario DECIMAL(10,2),
+    precio_total DECIMAL(12,2),
+    centro_costo VARCHAR(100),
+    descuento_porcentaje DECIMAL(5,2),
+    iva_porcentaje DECIMAL(5,2),
+    FOREIGN KEY (orden_compra_id) REFERENCES ordenes_compra(id),
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
 
-LOCK TABLES `ordenes_compra` WRITE;
-/*!40000 ALTER TABLE `ordenes_compra` DISABLE KEYS */;
-INSERT INTO `ordenes_compra` VALUES (1,'OC-TS-2025-001',1,'COT-001','2025-06-22 03:00:00','Compra aprobada','Verificar precio en factura','archivos/OC-TS-2025-001.pdf',10.00,21.00,0.00,1);
-/*!40000 ALTER TABLE `ordenes_compra` ENABLE KEYS */;
-UNLOCK TABLES;
+-- HISTORIAL DE ORDENES DE COMPRA
+CREATE TABLE historial_oc (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orden_compra_id INT NOT NULL,
+    estado_id INT NOT NULL,
+    usuario_id INT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    observaciones TEXT,
+    FOREIGN KEY (orden_compra_id) REFERENCES ordenes_compra(id),
+    FOREIGN KEY (estado_id) REFERENCES estados_oc(id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
 
---
--- Dumping data for table `perfiles`
---
+-- ENTREGAS PARCIALES DE OC
+CREATE TABLE entregas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orden_compra_id INT NOT NULL,
+    item_oc_id INT,
+    producto VARCHAR(60) NOT NULL,
+    cantidad INT NOT NULL,
+    usuario_id INT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (orden_compra_id) REFERENCES ordenes_compra(id),
+    FOREIGN KEY (item_oc_id) REFERENCES items_oc(id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
 
-LOCK TABLES `perfiles` WRITE;
-/*!40000 ALTER TABLE `perfiles` DISABLE KEYS */;
-INSERT INTO `perfiles` VALUES (4,'Administrador'),(3,'Comprador'),(2,'Encargado de Sector'),(1,'Usuario');
-/*!40000 ALTER TABLE `perfiles` ENABLE KEYS */;
-UNLOCK TABLES;
+-- FACTURAS Y REMITOS
+CREATE TABLE facturas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    orden_compra_id INT NOT NULL,
+    numero_factura VARCHAR(30),
+    numero_remito VARCHAR(30),
+    archivo_pdf VARCHAR(255) NOT NULL,
+    fecha DATE,
+    FOREIGN KEY (orden_compra_id) REFERENCES ordenes_compra(id)
+);
 
---
--- Dumping data for table `productos`
---
+-- HISTÓRICO DE COMPRAS
+CREATE TABLE historico_compras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_compra DATE NOT NULL,
+    producto_id INT NOT NULL,
+    cantidad INT NOT NULL,
+    precio_unitario DECIMAL(10,2),
+    precio_total DECIMAL(10,2),
+    proveedor_id INT NOT NULL,
+    sucursal_id INT NOT NULL,
+    items_oc_id INT NOT NULL,
+    categoria_producto_id INT,
+    usuario_id INT NOT NULL,
+    medio_pago VARCHAR(30),
+    FOREIGN KEY (producto_id) REFERENCES productos(id),
+    FOREIGN KEY (proveedor_id) REFERENCES proveedores(id),
+    FOREIGN KEY (sucursal_id) REFERENCES sucursales(id),
+    FOREIGN KEY (categoria_producto_id) REFERENCES categorias_productos(id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    FOREIGN KEY (items_oc_id) REFERENCES items_oc(id)
+);
 
-LOCK TABLES `productos` WRITE;
-/*!40000 ALTER TABLE `productos` DISABLE KEYS */;
-/*!40000 ALTER TABLE `productos` ENABLE KEYS */;
-UNLOCK TABLES;
+-- OBSERVACIONES EN NP Y OC
+CREATE TABLE observaciones_np_oc (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_documento VARCHAR(10) NOT NULL,
+    documento_id INT NOT NULL,
+    usuario_id INT NOT NULL,
+    estado_id INT,
+    observacion TEXT NOT NULL,
+    respuesta TEXT,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    FOREIGN KEY (estado_id) REFERENCES estados_np(id)
+);
 
---
--- Dumping data for table `proveedores`
---
+-- ADJUNTOS POR DOCUMENTO
+CREATE TABLE adjuntos_documentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_documento VARCHAR(10) NOT NULL,
+    documento_id INT NOT NULL,
+    nombre_archivo VARCHAR(255) NOT NULL,
+    ruta_archivo VARCHAR(255) NOT NULL,
+    tipo_mime VARCHAR(100),
+    descripcion TEXT,
+    usuario_id INT,
+    fecha_subida TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
 
-LOCK TABLES `proveedores` WRITE;
-/*!40000 ALTER TABLE `proveedores` DISABLE KEYS */;
-INSERT INTO `proveedores` VALUES (1,'Miguel','González','30123456789','3814123456'),(2,'Lucía','Paz','30987654321','3865421234');
-/*!40000 ALTER TABLE `proveedores` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping data for table `sectores`
---
-
-LOCK TABLES `sectores` WRITE;
-/*!40000 ALTER TABLE `sectores` DISABLE KEYS */;
-INSERT INTO `sectores` VALUES (1,'Administración'),(2,'Compras');
-/*!40000 ALTER TABLE `sectores` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping data for table `stock`
---
-
-LOCK TABLES `stock` WRITE;
-/*!40000 ALTER TABLE `stock` DISABLE KEYS */;
-/*!40000 ALTER TABLE `stock` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping data for table `sucursales`
---
-
-LOCK TABLES `sucursales` WRITE;
-/*!40000 ALTER TABLE `sucursales` DISABLE KEYS */;
-INSERT INTO `sucursales` VALUES (1,'Casa Central','San Martín 863 - San Miguel de Tucumán'),(2,'Sucursal Concepcion',' Padilla 10 local 4 - Concepción');
-/*!40000 ALTER TABLE `sucursales` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Dumping data for table `usuarios`
---
-
-LOCK TABLES `usuarios` WRITE;
-/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Juan','García','operador','operador',1,1,NULL),(2,'María','López','mlopez','ML2025',2,2,NULL),(3,'Carlos','Castro','ccastro','CC15',3,1,NULL),(4,'Ana','Ruiz','admin','admin',4,1,NULL);
-/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2025-06-30 19:05:14
+-- NOTIFICACIONES DE ESTADO
+CREATE TABLE notificaciones_estados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_documento VARCHAR(10),
+    documento_id INT NOT NULL,
+    estado VARCHAR(50),
+    mensaje TEXT,
+    fecha_envio DATETIME DEFAULT CURRENT_TIMESTAMP,
+    enviado BOOLEAN DEFAULT FALSE
+);
