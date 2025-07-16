@@ -364,3 +364,12 @@ CREATE TABLE notificaciones_estados (
     fecha_envio DATETIME DEFAULT CURRENT_TIMESTAMP,
     enviado BOOLEAN DEFAULT FALSE
 );
+
+ALTER TABLE usuarios
+ADD sector_id INT NOT NULL,
+ADD FOREIGN KEY (sector_id) REFERENCES sectores(id);
+
+ALTER TABLE notas_pedido DROP COLUMN archivo_adjunto;
+ALTER TABLE ordenes_compra DROP COLUMN archivo_adjunto;
+ALTER TABLE ordenes_compra DROP COLUMN archivo_pdf;
+
