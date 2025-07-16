@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1366</width>
-    <height>768</height>
+    <width>1105</width>
+    <height>761</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -23,21 +23,339 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Modelo de Cotejo</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>241</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="img/imagenes.qrc">:/xy/logo_info.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblNumeroMC_MC">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>20</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>MC - 000000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>60</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nota de pedido Nro:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblNumeroNP_MC">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>60</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nro NP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>60</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sector:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblSectorNP_MC">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>60</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sector NP</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tablaProveedores_MC">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>411</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>Razon Social</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Condicion Fiscal</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Forma Cotizacion</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Lugar de Entrega</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Plazo de Entrega</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>TOTAL $(aut.)</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Proveedor 1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proveedor 2</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnProveedor1_MC">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>130</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seleccionar Proveedor 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnProveedor2_MC">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>170</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seleccionar Proveedor 2</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tablaItemsPrecios_MC">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>1071</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>item</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cant.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Unid.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Detalle Producto / Servicio a Comparar</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.1) Imp Final Unit.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.1) Importe Total</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.2) Imp. Final Unit.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.2) Importe Total</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="tablaProveedorRecomendado_MC">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>431</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>item</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proveedor</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Precio Unit.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Costo Total</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnGuardarItems_MC">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>680</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar Cambios</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGenerarOC_MC">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>300</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236, 236, 9);</string>
+    </property>
+    <property name="text">
+     <string>Generar OC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGuardarRecomendado_MC">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>300</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar Cambios</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>874</x>
+      <y>683</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236, 236, 10);</string>
+    </property>
+    <property name="text">
+     <string>GUARDAR MC</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1366</width>
+     <width>1105</width>
      <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="img/imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>
