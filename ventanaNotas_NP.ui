@@ -13,17 +13,17 @@
   <property name="windowTitle">
    <string>NOTAS de la Nota de Pedido</string>
   </property>
-  <widget class="QPushButton" name="btnGuardarCambiosNotas_NP">
+  <widget class="QPushButton" name="btnAgregarComentario_NP">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>610</x>
      <y>10</y>
-     <width>111</width>
+     <width>121</width>
      <height>24</height>
     </rect>
    </property>
    <property name="text">
-    <string>Guardar Cambios</string>
+    <string>Agregar Comentario</string>
    </property>
   </widget>
   <widget class="QTableWidget" name="tableNotas_NP">
