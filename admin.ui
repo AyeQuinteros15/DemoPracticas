@@ -298,6 +298,22 @@
      <string>Abrir NP</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnModeloCotejo_Admin">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>260</y>
+      <width>131</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 224, 10);</string>
+    </property>
+    <property name="text">
+     <string>Modelo de Cotejo</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
