@@ -180,8 +180,8 @@
    <widget class="QPushButton" name="btnProveedor1_MC">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>130</y>
+      <x>430</x>
+      <y>240</y>
       <width>151</width>
       <height>31</height>
      </rect>
@@ -193,8 +193,8 @@
    <widget class="QPushButton" name="btnProveedor2_MC">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>170</y>
+      <x>430</x>
+      <y>270</y>
       <width>151</width>
       <height>31</height>
      </rect>
@@ -306,7 +306,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(236, 236, 9);</string>
+     <string notr="true">background-color: rgb(218, 218, 14);</string>
     </property>
     <property name="text">
      <string>Generar OC</string>
@@ -335,10 +335,42 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(236, 236, 10);</string>
+     <string notr="true">background-color: rgb(218, 218, 14);</string>
     </property>
     <property name="text">
      <string>GUARDAR MC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAdjArchivo_MC">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>100</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(218, 218, 14);</string>
+    </property>
+    <property name="text">
+     <string>Adj. Archivo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnVerArchivosAdj_MC">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>140</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(218, 218, 14);</string>
+    </property>
+    <property name="text">
+     <string>Ver Archivos Adj.</string>
     </property>
    </widget>
   </widget>
