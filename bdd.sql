@@ -340,3 +340,17 @@ CREATE TABLE IF NOT EXISTS notificaciones_estados (
   fecha_envio DATETIME DEFAULT CURRENT_TIMESTAMP,
   enviado BOOLEAN DEFAULT FALSE
 );
+
+CREATE TABLE IF NOT EXISTS adjuntos_documentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tipo_documento VARCHAR(10) NOT NULL,
+    documento_id INT NOT NULL,
+    nombre_archivo VARCHAR(255) NOT NULL,
+    ruta_archivo VARCHAR(255) NOT NULL,
+    tipo_mime VARCHAR(100),
+    descripcion TEXT,
+    usuario_id INT,
+    fecha_subida TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
