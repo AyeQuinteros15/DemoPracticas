@@ -16,9 +16,9 @@
   <widget class="QPushButton" name="btnAgregarComentario_NP">
    <property name="geometry">
     <rect>
-     <x>830</x>
+     <x>170</x>
      <y>10</y>
-     <width>121</width>
+     <width>131</width>
      <height>24</height>
     </rect>
    </property>
@@ -65,6 +65,19 @@
      <string>Fecha-Hora</string>
     </property>
    </column>
+  </widget>
+  <widget class="QPushButton" name="btnGuardarRespuesta_NP">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>10</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Guardar Respuesta</string>
+   </property>
   </widget>
  </widget>
  <resources/>
