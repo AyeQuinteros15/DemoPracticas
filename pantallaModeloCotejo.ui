@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1105</width>
+    <width>1366</width>
     <height>761</height>
    </rect>
   </property>
@@ -31,8 +31,8 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>241</width>
-      <height>101</height>
+      <width>231</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="text">
@@ -48,10 +48,10 @@
    <widget class="QLabel" name="lblNumeroMC_MC">
     <property name="geometry">
      <rect>
-      <x>440</x>
+      <x>260</x>
       <y>20</y>
       <width>181</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -131,8 +131,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>110</y>
-      <width>411</width>
+      <y>90</y>
+      <width>641</width>
       <height>211</height>
      </rect>
     </property>
@@ -176,31 +176,52 @@
       <string>Proveedor 2</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Proveedor 3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proveedor 4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proveedor 5</string>
+     </property>
+    </column>
    </widget>
    <widget class="QPushButton" name="btnProveedor1_MC">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>240</y>
-      <width>151</width>
-      <height>31</height>
+      <x>10</x>
+      <y>310</y>
+      <width>111</width>
+      <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);</string>
+    </property>
     <property name="text">
-     <string>Seleccionar Proveedor 1</string>
+     <string>Selec. Proveedor 1</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnProveedor2_MC">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>270</y>
-      <width>151</width>
-      <height>31</height>
+      <x>140</x>
+      <y>310</y>
+      <width>111</width>
+      <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);</string>
+    </property>
     <property name="text">
-     <string>Seleccionar Proveedor 2</string>
+     <string>Selec. Proveedor 2</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tablaItemsPrecios_MC">
@@ -208,7 +229,7 @@
      <rect>
       <x>10</x>
       <y>340</y>
-      <width>1071</width>
+      <width>1351</width>
       <height>331</height>
      </rect>
     </property>
@@ -234,29 +255,59 @@
     </column>
     <column>
      <property name="text">
-      <string>(Prv.1) Imp Final Unit.</string>
+      <string>(Prv.1) $Unit.</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>(Prv.1) Importe Total</string>
+      <string>(Prv.1) $Total</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>(Prv.2) Imp. Final Unit.</string>
+      <string>(Prv.2) $Unit.</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>(Prv.2) Importe Total</string>
+      <string>(Prv.2) $Total</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.3) $Unit.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.3) $Total</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.4) $Unit.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.4) $Total</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.5)  $Unit.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>(Prv.5) $Total</string>
      </property>
     </column>
    </widget>
    <widget class="QTableWidget" name="tablaProveedorRecomendado_MC">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>930</x>
       <y>10</y>
       <width>431</width>
       <height>281</height>
@@ -299,7 +350,7 @@
    <widget class="QPushButton" name="btnGenerarOC_MC">
     <property name="geometry">
      <rect>
-      <x>970</x>
+      <x>1230</x>
       <y>300</y>
       <width>111</width>
       <height>31</height>
@@ -315,7 +366,7 @@
    <widget class="QPushButton" name="btnGuardarRecomendado_MC">
     <property name="geometry">
      <rect>
-      <x>650</x>
+      <x>1100</x>
       <y>300</y>
       <width>111</width>
       <height>31</height>
@@ -328,8 +379,8 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>874</x>
-      <y>683</y>
+      <x>1150</x>
+      <y>680</y>
       <width>171</width>
       <height>31</height>
      </rect>
@@ -344,10 +395,10 @@
    <widget class="QPushButton" name="btnAdjArchivo_MC">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>100</y>
+      <x>800</x>
+      <y>40</y>
       <width>101</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -360,10 +411,10 @@
    <widget class="QPushButton" name="btnVerArchivosAdj_MC">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>140</y>
+      <x>800</x>
+      <y>10</y>
       <width>101</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -373,13 +424,107 @@
      <string>Ver Archivos Adj.</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnProveedor3_MC">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>310</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);</string>
+    </property>
+    <property name="text">
+     <string>Selec. Proveedor 3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnProveedor4_MC">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>310</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);</string>
+    </property>
+    <property name="text">
+     <string>Selec. Proveedor 4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnProveedor5_MC">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>310</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);</string>
+    </property>
+    <property name="text">
+     <string>Selec. Proveedor 5</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtNombreMC_MC">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>20</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textObservacionesMC_MC">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>90</y>
+      <width>231</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>0</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre MC (Opcional)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>70</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Observaciones:</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1105</width>
+     <width>1366</width>
      <height>22</height>
     </rect>
    </property>
