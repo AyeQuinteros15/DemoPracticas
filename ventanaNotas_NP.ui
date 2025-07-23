@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>769</width>
+    <width>982</width>
     <height>542</height>
    </rect>
   </property>
@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="btnAgregarComentario_NP">
    <property name="geometry">
     <rect>
-     <x>610</x>
+     <x>830</x>
      <y>10</y>
      <width>121</width>
      <height>24</height>
@@ -31,7 +31,7 @@
     <rect>
      <x>10</x>
      <y>40</y>
-     <width>751</width>
+     <width>961</width>
      <height>481</height>
     </rect>
    </property>
@@ -43,6 +43,26 @@
    <column>
     <property name="text">
      <string>Comentario</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fecha-Hora</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Usurio Resp.</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Respuesta</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fecha-Hora</string>
     </property>
    </column>
   </widget>
