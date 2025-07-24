@@ -16,9 +16,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>90</x>
      <y>10</y>
-     <width>191</width>
+     <width>141</width>
      <height>20</height>
     </rect>
    </property>
@@ -28,7 +28,7 @@
     </font>
    </property>
    <property name="text">
-    <string>AGREGAR NUEVO ITEM AL STOCK</string>
+    <string>AGREGAR NUEVO ITEM</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
