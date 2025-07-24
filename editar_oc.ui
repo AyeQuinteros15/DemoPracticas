@@ -89,9 +89,9 @@
    <widget class="QTableWidget" name="tablaDetallesItems">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>0</x>
       <y>370</y>
-      <width>1331</width>
+      <width>1361</width>
       <height>201</height>
      </rect>
     </property>
@@ -140,17 +140,27 @@
     </column>
     <column>
      <property name="text">
-      <string>IVA 1 %</string>
+      <string>IVA %</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>IVA 2 %</string>
+      <string>IVA $</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>Otro imp. %</string>
+      <string>IB 1%</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Otros imp. %</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Otros imp. $</string>
      </property>
     </column>
     <column>
@@ -220,9 +230,9 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>30</x>
       <y>600</y>
-      <width>181</width>
+      <width>151</width>
       <height>81</height>
      </rect>
     </property>
@@ -235,11 +245,17 @@
     <widget class="QLabel" name="lblFirmaConfecciono_OC">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>141</width>
-       <height>61</height>
+       <x>0</x>
+       <y>0</y>
+       <width>150</width>
+       <height>60</height>
       </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>60</height>
+      </size>
      </property>
      <property name="font">
       <font>
@@ -255,6 +271,19 @@
      </property>
      <property name="scaledContents">
       <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblFechaHoraFirmaRespC">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lblFechaHoraFirmaRespC</string>
      </property>
     </widget>
    </widget>
@@ -461,43 +490,11 @@
      <string>Proveedor</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_23">
-    <property name="geometry">
-     <rect>
-      <x>1040</x>
-      <y>140</y>
-      <width>101</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Nro. Cotizacion:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtNumCotizacion">
-    <property name="geometry">
-     <rect>
-      <x>1040</x>
-      <y>160</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_24">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>230</y>
+      <y>210</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -516,7 +513,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>250</y>
+      <y>230</y>
       <width>531</width>
       <height>61</height>
      </rect>
@@ -574,9 +571,9 @@
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>200</x>
       <y>600</y>
-      <width>181</width>
+      <width>151</width>
       <height>81</height>
      </rect>
     </property>
@@ -589,11 +586,17 @@
     <widget class="QLabel" name="lblFirmaAdministracion_OC">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>141</width>
-       <height>61</height>
+       <x>0</x>
+       <y>0</y>
+       <width>150</width>
+       <height>60</height>
       </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>60</height>
+      </size>
      </property>
      <property name="font">
       <font>
@@ -611,13 +614,26 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="lblFechaHoraFirmaAdm">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lblFechaHoraFirmaAdm</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>370</x>
       <y>600</y>
-      <width>181</width>
+      <width>141</width>
       <height>81</height>
      </rect>
     </property>
@@ -630,11 +646,17 @@
     <widget class="QLabel" name="lblFirmaFinanzas_OC">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
+       <x>0</x>
+       <y>0</y>
        <width>141</width>
-       <height>61</height>
+       <height>60</height>
       </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>60</height>
+      </size>
      </property>
      <property name="font">
       <font>
@@ -652,13 +674,26 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="lblFechaHoraFirmaFinanzas">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lblFechaHoraFirmaFinanzas</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>730</x>
+      <x>530</x>
       <y>600</y>
-      <width>181</width>
+      <width>141</width>
       <height>81</height>
      </rect>
     </property>
@@ -671,11 +706,17 @@
     <widget class="QLabel" name="lblFirmaGerencia_OC">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
+       <x>0</x>
+       <y>0</y>
        <width>141</width>
-       <height>61</height>
+       <height>60</height>
       </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>60</height>
+      </size>
      </property>
      <property name="font">
       <font>
@@ -693,59 +734,32 @@
       <bool>true</bool>
      </property>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_6">
-    <property name="geometry">
-     <rect>
-      <x>960</x>
-      <y>600</y>
-      <width>181</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QLabel" name="lblFirmaProveedor_OC">
+    <widget class="QLabel" name="lblFechaHoraFirmaGG">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
+       <x>10</x>
+       <y>60</y>
        <width>141</width>
-       <height>61</height>
+       <height>16</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <pointsize>9</pointsize>
-       <bold>false</bold>
-      </font>
-     </property>
      <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
+      <string>lblFechaHoraFirmaGG</string>
      </property>
     </widget>
    </widget>
    <widget class="QPushButton" name="btnAdjuntarArchivo_OC">
     <property name="geometry">
      <rect>
-      <x>1220</x>
+      <x>1150</x>
       <y>120</y>
       <width>131</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(229, 222, 18);</string>
+     <string notr="true">background-color: rgb(229, 222, 18);
+color: rgb(8, 8, 8);</string>
     </property>
     <property name="text">
      <string>Adj. Archivo</string>
@@ -754,7 +768,7 @@
    <widget class="QPushButton" name="btnFirmarConfecciono_OC">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>60</x>
       <y>690</y>
       <width>75</width>
       <height>24</height>
@@ -773,7 +787,7 @@
    <widget class="QPushButton" name="btnFirmarAdministracion_OC">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>230</x>
       <y>690</y>
       <width>75</width>
       <height>24</height>
@@ -792,7 +806,7 @@
    <widget class="QPushButton" name="btnFirmarFinanzas_OC">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>400</x>
       <y>690</y>
       <width>75</width>
       <height>24</height>
@@ -811,26 +825,7 @@
    <widget class="QPushButton" name="btnFirmarGerencia_OC">
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>690</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>Firmar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnFirmarProveedor_OC">
-    <property name="geometry">
-     <rect>
-      <x>1010</x>
+      <x>560</x>
       <y>690</y>
       <width>75</width>
       <height>24</height>
@@ -849,9 +844,9 @@
    <widget class="QLabel" name="label_30">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>60</x>
       <y>580</y>
-      <width>81</width>
+      <width>91</width>
       <height>16</height>
      </rect>
     </property>
@@ -862,13 +857,13 @@
      </font>
     </property>
     <property name="text">
-     <string>Confecciono</string>
+     <string>Resp. Compra</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_33">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>230</x>
       <y>580</y>
       <width>101</width>
       <height>16</height>
@@ -887,7 +882,7 @@
    <widget class="QLabel" name="label_34">
     <property name="geometry">
      <rect>
-      <x>560</x>
+      <x>410</x>
       <y>580</y>
       <width>61</width>
       <height>16</height>
@@ -906,9 +901,9 @@
    <widget class="QLabel" name="label_35">
     <property name="geometry">
      <rect>
-      <x>790</x>
+      <x>550</x>
       <y>580</y>
-      <width>61</width>
+      <width>111</width>
       <height>16</height>
      </rect>
     </property>
@@ -919,33 +914,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Gerencia</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_38">
-    <property name="geometry">
-     <rect>
-      <x>980</x>
-      <y>580</y>
-      <width>151</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Conformidad Proveedor</string>
+     <string>Gerencia General</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnAgregarEntregaPago">
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>320</y>
+      <y>300</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -961,7 +937,7 @@
     <property name="geometry">
      <rect>
       <x>1130</x>
-      <y>290</y>
+      <y>280</y>
       <width>171</width>
       <height>51</height>
      </rect>
@@ -980,7 +956,7 @@
     <property name="geometry">
      <rect>
       <x>1190</x>
-      <y>320</y>
+      <y>310</y>
       <width>121</width>
       <height>31</height>
      </rect>
@@ -998,14 +974,15 @@
    <widget class="QPushButton" name="btnVerArchivosAdjuntos_OC">
     <property name="geometry">
      <rect>
-      <x>1220</x>
+      <x>1150</x>
       <y>160</y>
       <width>131</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(229, 222, 18);</string>
+     <string notr="true">background-color: rgb(229, 222, 18);
+color: rgb(8, 8, 8);</string>
     </property>
     <property name="text">
      <string>Ver Arch. Adjuntos</string>
@@ -1121,33 +1098,18 @@
    <widget class="QPushButton" name="btnAbrirNotas_OC">
     <property name="geometry">
      <rect>
-      <x>1220</x>
+      <x>1150</x>
       <y>210</y>
       <width>131</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(229, 222, 18);</string>
+     <string notr="true">background-color: rgb(229, 222, 18);
+color: rgb(8, 8, 8);</string>
     </property>
     <property name="text">
      <string>Notas OC / NP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnGuardarOC_OC">
-    <property name="geometry">
-     <rect>
-      <x>1220</x>
-      <y>630</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(229, 222, 18);</string>
-    </property>
-    <property name="text">
-     <string>GUARDAR OC</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnAbrirMC_OC">
@@ -1164,6 +1126,104 @@
     </property>
     <property name="text">
      <string>Abrir MC</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>421</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>SI LAS CONDICIONES PACTADAS EN ESTA ORDEN NO CORRESPONDEN A LO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>401</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ACORDADO, NO GENERAR EL PEDIDO SIN PREVIA CONSULTA.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>580</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Observaciones internas</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtObservacionesInternasOC">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>600</y>
+      <width>651</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>110</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Confecciona:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCompConfeccionaOC">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>110</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(lblCompConfeccionaOC)</string>
     </property>
    </widget>
   </widget>
