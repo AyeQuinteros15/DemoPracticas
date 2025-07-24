@@ -52,6 +52,11 @@
    </column>
    <column>
     <property name="text">
+     <string>Estado NP / OC</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
      <string>Usurio Resp.</string>
     </property>
    </column>
