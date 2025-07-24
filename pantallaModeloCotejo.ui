@@ -202,7 +202,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(230, 230, 230);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Selec. Proveedor 1</string>
@@ -218,7 +218,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(230, 230, 230);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Selec. Proveedor 2</string>
@@ -357,23 +357,23 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(218, 218, 14);</string>
+     <string notr="true">background-color: rgb(193, 187, 13);</string>
     </property>
     <property name="text">
      <string>Generar OC</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnGuardarRecomendado_MC">
+   <widget class="QPushButton" name="btnCambiarProveedor_MC">
     <property name="geometry">
      <rect>
-      <x>1100</x>
+      <x>1090</x>
       <y>300</y>
-      <width>111</width>
+      <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Guardar Cambios</string>
+     <string>Cambiar Proveedor</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -386,7 +386,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(218, 218, 14);</string>
+     <string notr="true">background-color: rgb(193, 187, 13);</string>
     </property>
     <property name="text">
      <string>GUARDAR MC</string>
@@ -402,7 +402,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(218, 218, 14);</string>
+     <string notr="true">background-color: rgb(193, 187, 13);</string>
     </property>
     <property name="text">
      <string>Adj. Archivo</string>
@@ -418,7 +418,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(218, 218, 14);</string>
+     <string notr="true">background-color: rgb(193, 187, 13);</string>
     </property>
     <property name="text">
      <string>Ver Archivos Adj.</string>
@@ -434,7 +434,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(230, 230, 230);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Selec. Proveedor 3</string>
@@ -450,7 +450,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(230, 230, 230);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Selec. Proveedor 4</string>
@@ -466,7 +466,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(230, 230, 230);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Selec. Proveedor 5</string>
@@ -516,6 +516,19 @@
     </property>
     <property name="text">
      <string>Observaciones:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAgregarItemTabla_MC">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>680</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar Item</string>
     </property>
    </widget>
   </widget>
