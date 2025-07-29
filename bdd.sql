@@ -109,21 +109,23 @@ CREATE TABLE IF NOT EXISTS notas_pedido (
   prioridad BOOLEAN DEFAULT FALSE,
   fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   fecha_entrega DATE,
-  gerente_solicitante VARCHAR(50),
   fecha_observacion TIMESTAMP NULL,
   fecha_aprobacion TIMESTAMP NULL,
   id_observador INT,
-  responsable_solicitud VARCHAR(100),
   stock_regional INT,
   motivo_rechazo TEXT,
   estado_asignacion BOOLEAN DEFAULT FALSE,
   fecha_firma TIMESTAMP,
   firma_usuario_id INT,
+  gerente_solicitante_id INT DEFAULT NULL,
+  responsable_solicitud_id INT DEFAULT NULL,
   FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
   FOREIGN KEY (sucursal_id) REFERENCES sucursales(id),
   FOREIGN KEY (sector_id) REFERENCES sectores(id),
   FOREIGN KEY (id_observador) REFERENCES usuarios(id),
-  FOREIGN KEY (firma_usuario_id) REFERENCES usuarios(id)
+  FOREIGN KEY (firma_usuario_id) REFERENCES usuarios(id),
+  FOREIGN KEY (gerente_solicitante_id) REFERENCES usuarios(id),
+  FOREIGN KEY (responsable_solicitud_id) REFERENCES usuarios(id)
 );
 
 CREATE TABLE IF NOT EXISTS items_np (
@@ -161,23 +163,33 @@ CREATE TABLE IF NOT EXISTS cotejo_presupuestos (
   FOREIGN KEY (cotejo_padre_id)         REFERENCES cotejo_presupuestos(id)
 );
 
-CREATE TABLE IF NOT EXISTS cotejo_ofertas (
+CREATE TABLE cotejo_items (
   id INT AUTO_INCREMENT PRIMARY KEY,
   cotejo_presupuesto_id INT NOT NULL,
+  producto_id INT DEFAULT NULL,
+  Descripcion_item TEXT NOT NULL,
+  cantidad_solicitada DECIMAL(10,2) NOT NULL,
+  Unidad_solicitada VARCHAR(20),
+  FOREIGN KEY (cotejo_presupuesto_id) REFERENCES cotejo_presupuestos(id),
+  FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
+
+CREATE TABLE IF NOT EXISTS cotejo_ofertas_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  cotejo_item_id INT NOT NULL,
   proveedor_id INT NOT NULL,
-  descripcion TEXT NOT NULL,
-  cantidad DECIMAL(10,2),
-  unidad VARCHAR(20),
   precio_unitario DECIMAL(12,2),
   precio_total DECIMAL(12,2),
+  unidad_ofrecida VARCHAR(20),
+  cantidad_ofrecida DECIMAL(10,2),
   condicion_fiscal VARCHAR(100),
   forma_pago VARCHAR(100),
   plazo_entrega VARCHAR(100),
   lugar_entrega VARCHAR(100),
   motivo_seleccion TEXT,
   visible BOOLEAN DEFAULT TRUE,
-  FOREIGN KEY (cotejo_presupuesto_id) REFERENCES cotejo_presupuestos(id),
-  FOREIGN KEY (proveedor_id)            REFERENCES proveedores(id)
+  FOREIGN KEY (cotejo_item_id) REFERENCES cotejo_items(id),
+  FOREIGN KEY (proveedor_id) REFERENCES proveedores(id)
 );
 
 CREATE TABLE IF NOT EXISTS ordenes_compra (
@@ -204,7 +216,6 @@ CREATE TABLE IF NOT EXISTS ordenes_compra (
   titular_cuenta VARCHAR(100),
   lugar_entrega VARCHAR(150),
   estado_notificado BOOLEAN DEFAULT FALSE,
-  observacion_interna TEXT,
   orden_compra_anterior_id INT,
   requiere_entrega_rapida BOOLEAN DEFAULT FALSE,
   orden_compra_clonada_de_id INT,
@@ -247,7 +258,6 @@ CREATE TABLE IF NOT EXISTS entregas (
   id INT AUTO_INCREMENT PRIMARY KEY,
   orden_compra_id INT NOT NULL,
   item_oc_id INT,
-  producto VARCHAR(60) NOT NULL,
   cantidad INT NOT NULL,
   usuario_id INT NOT NULL,
   fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -323,6 +333,20 @@ CREATE TABLE observaciones_oc (
   FOREIGN KEY (respuesta_observacion_id) REFERENCES observaciones_oc(id) ON DELETE SET NULL
 );
 
+CREATE TABLE IF NOT EXISTS observaciones_internas_oc (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  orden_compra_id INT NOT NULL,
+  usuario_id INT NOT NULL,
+  estado_id INT,
+  observacion_interna_oc TEXT NOT NULL,
+  fecha_observacion_interna_oc TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  respuesta_observacion_interna_oc_id INT DEFAULT NULL,
+  FOREIGN KEY (orden_compra_id) REFERENCES ordenes_compra(id),
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+  FOREIGN KEY (estado_id) REFERENCES estados_oc(id),
+  FOREIGN KEY (respuesta_observacion_interna_oc_id) REFERENCES observaciones_internas_oc(id) ON DELETE SET NULL
+);
+
 CREATE TABLE IF NOT EXISTS datos_bancarios_proveedor (
   id INT AUTO_INCREMENT PRIMARY KEY,
   proveedor_id INT NOT NULL,
@@ -331,26 +355,33 @@ CREATE TABLE IF NOT EXISTS datos_bancarios_proveedor (
   FOREIGN KEY (proveedor_id) REFERENCES proveedores(id)
 );
 
-CREATE TABLE IF NOT EXISTS notificaciones_estados (
+CREATE TABLE notificaciones_estados (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  tipo_documento VARCHAR(10),
-  documento_id INT NOT NULL,
+  nota_pedido_id INT DEFAULT NULL,
+  orden_compra_id INT DEFAULT NULL,
   estado_noti VARCHAR(50),
   mensaje_noti TEXT,
   fecha_envio DATETIME DEFAULT CURRENT_TIMESTAMP,
-  enviado BOOLEAN DEFAULT FALSE
+  enviado BOOLEAN DEFAULT FALSE,
+  FOREIGN KEY (nota_pedido_id) REFERENCES notas_pedido(id),
+  FOREIGN KEY (orden_compra_id) REFERENCES ordenes_compra(id)
 );
 
 CREATE TABLE IF NOT EXISTS adjuntos_documentos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    tipo_documento VARCHAR(10) NOT NULL,
-    documento_id INT NOT NULL,
-    nombre_archivo VARCHAR(255) NOT NULL,
-    ruta_archivo VARCHAR(255) NOT NULL,
-    tipo_mime VARCHAR(100),
+    nota_pedido_id INT DEFAULT NULL,
+    orden_compra_id INT DEFAULT NULL,
+    factura_id INT DEFAULT NULL,
+    remito_id INT DEFAULT NULL,
+    ruta_archivo VARCHAR(100) NOT NULL,
     descripcion TEXT,
     usuario_id INT,
     fecha_subida TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+    FOREIGN KEY (nota_pedido_id)     REFERENCES notas_pedido(id),
+    FOREIGN KEY (orden_compra_id)    REFERENCES ordenes_compra(id),
+    FOREIGN KEY (factura_id)         REFERENCES facturas(id),
+    FOREIGN KEY (remito_id)          REFERENCES remitos(id),
+    FOREIGN KEY (usuario_id)         REFERENCES usuarios(id)
 );
+
 
