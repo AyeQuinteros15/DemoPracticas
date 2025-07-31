@@ -41,7 +41,7 @@
       <x>570</x>
       <y>230</y>
       <width>501</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -90,7 +90,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>370</y>
+      <y>360</y>
       <width>1361</width>
       <height>201</height>
      </rect>
@@ -1262,6 +1262,19 @@ color: rgb(8, 8, 8);</string>
     </property>
     <property name="text">
      <string>Moneda</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEliminarItem_OC">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>330</y>
+      <width>91</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar Item</string>
     </property>
    </widget>
   </widget>
