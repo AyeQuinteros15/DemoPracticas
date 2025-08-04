@@ -32,7 +32,7 @@
    <string>Crear Nota de Pedido</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="logo_np">
@@ -40,9 +40,15 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>291</width>
-      <height>131</height>
+      <width>300</width>
+      <height>130</height>
      </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>300</width>
+      <height>130</height>
+     </size>
     </property>
     <property name="text">
      <string/>
@@ -170,7 +176,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true"/>
     </property>
     <column>
      <property name="text">
@@ -213,7 +219,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(239, 239, 239);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Agregar item</string>
@@ -229,7 +235,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -261,7 +267,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string/>
@@ -269,11 +275,23 @@
     <widget class="QLabel" name="lblFirmaSolicitante_NP">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>141</width>
-       <height>61</height>
+       <x>10</x>
+       <y>0</y>
+       <width>160</width>
+       <height>70</height>
       </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>160</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
      </property>
      <property name="font">
       <font>
@@ -334,7 +352,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string/>
@@ -342,11 +360,17 @@
     <widget class="QLabel" name="lblFirmaGerencia_NP">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>141</width>
-       <height>61</height>
+       <x>10</x>
+       <y>0</y>
+       <width>160</width>
+       <height>70</height>
       </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>160</width>
+       <height>70</height>
+      </size>
      </property>
      <property name="font">
       <font>
@@ -407,7 +431,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(239, 239, 239);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Adjuntar Archivo</string>
@@ -426,7 +450,7 @@
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(216, 216, 216);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Firmar</string>
@@ -445,7 +469,7 @@
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(216, 216, 216);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Firmar</string>
@@ -564,7 +588,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(230, 230, 230);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Ver Archivos Adjuntos</string>
@@ -576,11 +600,11 @@
       <x>560</x>
       <y>370</y>
       <width>111</width>
-      <height>24</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(225, 225, 225);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Guardar Cambios</string>
@@ -596,7 +620,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(223, 209, 10);</string>
+     <string notr="true">background-color: rgb(223, 209, 10);
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>NOTAS NP</string>
@@ -637,8 +662,15 @@
     <property name="title">
      <string>Opciones</string>
     </property>
+    <widget class="QMenu" name="menuGuardar_en_PDF">
+     <property name="title">
+      <string>Guardar en PDF</string>
+     </property>
+     <addaction name="actionPDF_Completo"/>
+     <addaction name="actionPDF_Proveedor"/>
+    </widget>
     <addaction name="actionGenerar_NP"/>
-    <addaction name="actionGuardar_en_PDF_NP"/>
+    <addaction name="menuGuardar_en_PDF"/>
     <addaction name="actionCancelar_NP"/>
    </widget>
    <addaction name="menuOpciones"/>
@@ -649,14 +681,19 @@
     <string>Generar NP</string>
    </property>
   </action>
-  <action name="actionGuardar_en_PDF_NP">
-   <property name="text">
-    <string>Guardar en PDF</string>
-   </property>
-  </action>
   <action name="actionCancelar_NP">
    <property name="text">
     <string>Cancelar</string>
+   </property>
+  </action>
+  <action name="actionPDF_Completo">
+   <property name="text">
+    <string>PDF Completo</string>
+   </property>
+  </action>
+  <action name="actionPDF_Proveedor">
+   <property name="text">
+    <string>PDF Proveedor</string>
    </property>
   </action>
  </widget>

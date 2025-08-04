@@ -213,9 +213,15 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>251</width>
-      <height>91</height>
+      <width>300</width>
+      <height>110</height>
      </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>300</width>
+      <height>110</height>
+     </size>
     </property>
     <property name="text">
      <string/>
@@ -1291,8 +1297,15 @@ color: rgb(8, 8, 8);</string>
     <property name="title">
      <string>Opciones</string>
     </property>
+    <widget class="QMenu" name="menuDescargar_en_PDF">
+     <property name="title">
+      <string>Descargar en PDF</string>
+     </property>
+     <addaction name="actionPDF_Completo"/>
+     <addaction name="actionPDF_Proveedor"/>
+    </widget>
     <addaction name="actionGuardar_OC"/>
-    <addaction name="actionDescargar_en_PDF_OC"/>
+    <addaction name="menuDescargar_en_PDF"/>
     <addaction name="actionCancelar_OC"/>
    </widget>
    <addaction name="menuOpciones"/>
@@ -1308,9 +1321,14 @@ color: rgb(8, 8, 8);</string>
     <string>Cancelar</string>
    </property>
   </action>
-  <action name="actionDescargar_en_PDF_OC">
+  <action name="actionPDF_Completo">
    <property name="text">
-    <string>Descargar en PDF</string>
+    <string>PDF Completo</string>
+   </property>
+  </action>
+  <action name="actionPDF_Proveedor">
+   <property name="text">
+    <string>PDF Proveedor</string>
    </property>
   </action>
  </widget>
