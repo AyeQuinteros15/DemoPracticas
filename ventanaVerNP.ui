@@ -204,7 +204,7 @@
      <rect>
       <x>10</x>
       <y>440</y>
-      <width>581</width>
+      <width>781</width>
       <height>81</height>
      </rect>
     </property>
@@ -512,23 +512,6 @@
     </property>
     <property name="text">
      <string>Ver Archivos Adjuntos</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnNotas_NP">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>460</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(223, 209, 10);
-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>NOTAS NP</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblEstadoNP_NP">
