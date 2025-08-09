@@ -212,8 +212,8 @@
    <widget class="QPushButton" name="btnAgregarItem">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>370</y>
+      <x>580</x>
+      <y>360</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -519,7 +519,7 @@
      <rect>
       <x>20</x>
       <y>140</y>
-      <width>141</width>
+      <width>81</width>
       <height>16</height>
      </rect>
     </property>
@@ -530,16 +530,16 @@
      </font>
     </property>
     <property name="text">
-     <string>Gerente Solicitante:</string>
+     <string>Solicitante:</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblNombreUsuario_NP">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>110</x>
       <y>140</y>
-      <width>171</width>
-      <height>16</height>
+      <width>161</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="text">
@@ -549,7 +549,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>280</x>
       <y>140</y>
       <width>51</width>
       <height>16</height>
@@ -568,7 +568,7 @@
    <widget class="QLabel" name="lblSectorUsuario_NP">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>340</x>
       <y>140</y>
       <width>141</width>
       <height>16</height>
@@ -597,8 +597,8 @@
    <widget class="QPushButton" name="btnGuardarCambiosItems_NP">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>370</y>
+      <x>450</x>
+      <y>360</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -646,6 +646,183 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>ESTADO NP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEliminarItem_NP">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>360</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar Item</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxCentroCosto_NP">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>140</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>TUCUMAN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SALTA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ORAN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JUJUY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SAN PEDRO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SANTIEGO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LA BANDA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CONCEPCION</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GOMEZ PARDO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HML ROCA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CORDOBA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CASA CENTRAL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SISTEMAS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OPERACIONES</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RIESGO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ADMINISTRACION</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FINANZAS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RR. HH.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COBRANZAS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CALL CENTER ATENCION</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CALL CENTER COBRANZAS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GERENCIA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COBRANZAS DEL NOROESTE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TESORERIA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VENTAS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BANCO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SUC. BANCO</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>140</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Centro Costo:</string>
     </property>
    </widget>
   </widget>
