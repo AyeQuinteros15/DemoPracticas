@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1366</width>
+    <width>1342</width>
     <height>768</height>
    </rect>
   </property>
@@ -204,40 +204,6 @@ color: rgb(0, 0, 0);</string>
      <string>ABRIR NP</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnAprobarNP_GG">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>170</y>
-      <width>111</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(18, 223, 18);
-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>APROBAR NP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnRechazarNP_GG">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>250</y>
-      <width>111</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(223, 0, 0);
-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>RECHAZAR NP</string>
-    </property>
-   </widget>
    <widget class="QTableWidget" name="tablaDetallesEstado">
     <property name="geometry">
      <rect>
@@ -358,7 +324,7 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1366</width>
+     <width>1342</width>
      <height>22</height>
     </rect>
    </property>
