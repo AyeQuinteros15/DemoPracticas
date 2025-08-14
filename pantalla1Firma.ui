@@ -255,8 +255,12 @@ color: rgb(0, 0, 0);</string>
       <x>1260</x>
       <y>60</y>
       <width>75</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Abrir OC</string>
@@ -340,6 +344,23 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>Abrir NP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>130</y>
+      <width>75</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(232, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Rechazar</string>
     </property>
    </widget>
   </widget>
