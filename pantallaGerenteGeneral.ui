@@ -300,22 +300,76 @@ color: rgb(0, 0, 0);</string>
       <string>Total Factura</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Fecha Limite</string>
+     </property>
+    </column>
    </widget>
-   <widget class="QPushButton" name="btnAbrirOC_GG">
+   <widget class="QPushButton" name="btnAceptarOC_GG">
     <property name="geometry">
      <rect>
-      <x>1200</x>
-      <y>540</y>
-      <width>111</width>
+      <x>1190</x>
+      <y>450</y>
+      <width>101</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(23, 212, 9);</string>
+    </property>
+    <property name="text">
+     <string>ACEPTAR OC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRechazarOC_GG">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>640</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(211, 21, 14);</string>
+    </property>
+    <property name="text">
+     <string>RECHAZAR OC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnObservarOC_GG">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>520</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(223, 226, 25);
 color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>ABRIR OC</string>
+     <string>OBSERVAR OC</string>
     </property>
    </widget>
   </widget>
