@@ -420,6 +420,16 @@ color: rgb(0, 0, 0);</string>
       <string>Estado</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Fecha Limite</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nro M.C.</string>
+     </property>
+    </column>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
