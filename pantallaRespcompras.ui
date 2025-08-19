@@ -109,8 +109,8 @@
     <widget class="QPushButton" name="btnCerrarSesion">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
+       <x>260</x>
+       <y>190</y>
        <width>91</width>
        <height>31</height>
       </rect>
@@ -122,8 +122,8 @@
     <widget class="QPushButton" name="btnCrearNP_RC">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>90</y>
+       <x>200</x>
+       <y>20</y>
        <width>131</width>
        <height>41</height>
       </rect>
@@ -166,7 +166,7 @@ color: rgb(0, 0, 0);</string>
       <rect>
        <x>0</x>
        <y>200</y>
-       <width>301</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -179,6 +179,59 @@ color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Detalles de trazabilidad</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCrearNP_F2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>CREAR NP</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>120</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(Esta NP realizara recorrido de aprobacion normal)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>60</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(Esta NP se crea ya aprobada por ti)</string>
      </property>
     </widget>
    </widget>
@@ -198,7 +251,7 @@ color: rgb(0, 0, 0);</string>
      </font>
     </property>
     <property name="text">
-     <string>NOTAS DE PEDIDO APROBADAS</string>
+     <string>NOTAS DE PEDIDO ACTIVAS</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tablaNPactivasRC">
@@ -275,7 +328,7 @@ color: rgb(0, 0, 0);</string>
      <string>Ver Nota de Pedido</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnDevolverNP_RC">
+   <widget class="QPushButton" name="btnObservarNP_RC">
     <property name="geometry">
      <rect>
       <x>1200</x>
@@ -285,7 +338,7 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="text">
-     <string>Devolver NP</string>
+     <string>Observar NP</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnResueltoNP_RC">
@@ -460,6 +513,11 @@ color: rgb(0, 0, 0);</string>
       <string>Estado</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Fecha Limite</string>
+     </property>
+    </column>
    </widget>
    <widget class="QPushButton" name="btnAbrirOC_RC">
     <property name="geometry">
@@ -484,8 +542,20 @@ color: rgb(0, 0, 0);</string>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+    <addaction name="actionAbrir_Biblioteca_NP_OC"/>
+   </widget>
+   <addaction name="menuOpciones"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir_Biblioteca_NP_OC">
+   <property name="text">
+    <string>Abrir Biblioteca NP/OC</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
