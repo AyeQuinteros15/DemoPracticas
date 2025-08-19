@@ -109,8 +109,8 @@
     <widget class="QPushButton" name="btnCerrarSesion">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>40</y>
+       <x>250</x>
+       <y>170</y>
        <width>91</width>
        <height>31</height>
       </rect>
@@ -123,7 +123,7 @@
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>90</y>
+       <y>10</y>
        <width>131</width>
        <height>41</height>
       </rect>
@@ -179,6 +179,59 @@ color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Detalles de trazabilidad</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>50</y>
+       <width>201</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(Esta NP realizara recorrido de aprobacion normal)</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCrearNPaprobada_F2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>70</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>CREAR NP APROBADA</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>110</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(Esta NP va directamente al Resp. de Compras)</string>
      </property>
     </widget>
    </widget>
@@ -378,6 +431,7 @@ background-color: rgb(232, 0, 0);</string>
      <string>Opciones</string>
     </property>
     <addaction name="actionUsar_perfil_Resp_Compras"/>
+    <addaction name="actionAbri_Biblioteca_NP_OC"/>
    </widget>
    <addaction name="menuOpciones"/>
   </widget>
@@ -385,6 +439,11 @@ background-color: rgb(232, 0, 0);</string>
   <action name="actionUsar_perfil_Resp_Compras">
    <property name="text">
     <string>Usar derechos Resp. Compras</string>
+   </property>
+  </action>
+  <action name="actionAbri_Biblioteca_NP_OC">
+   <property name="text">
+    <string>Abri Biblioteca NP/OC</string>
    </property>
   </action>
  </widget>
