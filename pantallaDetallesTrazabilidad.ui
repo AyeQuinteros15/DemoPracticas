@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1223</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1366</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Detalles de Trazabilidad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tablaDetallesCreacion">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>461</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>Numero</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Creador Por</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Creacion</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Observado Por</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Observacion</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Detalle Observacion</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Firma</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Observado Por</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Observacion</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Detalle Observacion</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Firma 1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Firma 2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>Fecha Firma 3</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Nota de Pedido</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Modelo de Cotejo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Orden de Compra</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="tablaDetallesEstado">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>10</y>
+      <width>641</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Usuario</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha/Hora</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Accion</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Detalles de trazabilidad</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>120</y>
+      <width>131</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(217, 221, 10);</string>
+    </property>
+    <property name="text">
+     <string>Descargar en PDF</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1223</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
