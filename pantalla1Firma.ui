@@ -110,7 +110,7 @@
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>170</y>
+       <y>180</y>
        <width>91</width>
        <height>31</height>
       </rect>
@@ -166,7 +166,7 @@ color: rgb(0, 0, 0);</string>
       <rect>
        <x>0</x>
        <y>200</y>
-       <width>301</width>
+       <width>201</width>
        <height>31</height>
       </rect>
      </property>
@@ -282,6 +282,11 @@ color: rgb(0, 0, 0);</string>
       <string>Estado</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Fecha Limite</string>
+     </property>
+    </column>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
@@ -299,7 +304,7 @@ color: rgb(0, 0, 0);</string>
      </font>
     </property>
     <property name="text">
-     <string>ORDENES DE COMPRA PARA FIRMAR</string>
+     <string>ORDENES DE COMPRA A FIRMAR</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnAbrirOC_1F">
@@ -310,6 +315,11 @@ color: rgb(0, 0, 0);</string>
       <width>75</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(235, 239, 13);
@@ -390,30 +400,22 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>1260</x>
-      <y>520</y>
-      <width>75</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Abrir NP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>1260</x>
-      <y>130</y>
+      <y>510</y>
       <width>75</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(232, 0, 0);</string>
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>Rechazar</string>
+     <string>Abrir NP</string>
     </property>
    </widget>
   </widget>
