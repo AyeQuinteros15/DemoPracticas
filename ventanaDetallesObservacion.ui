@@ -29,11 +29,24 @@
   <widget class="QTextEdit" name="textEditDetallesObservacion">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>40</y>
-     <width>491</width>
-     <height>331</height>
+     <width>511</width>
+     <height>341</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGuardarObservacion">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
    </property>
   </widget>
  </widget>
