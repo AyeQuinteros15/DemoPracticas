@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(225, 225, 225);</string>
+     <string notr="true"/>
     </property>
     <property name="title">
      <string>Perfil</string>
@@ -149,7 +149,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true"/>
     </property>
     <column>
      <property name="text">
@@ -278,7 +278,7 @@ color: rgb(0, 0, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
+     <string notr="true"/>
     </property>
     <column>
      <property name="text">
@@ -310,7 +310,7 @@ color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>1190</x>
-      <y>450</y>
+      <y>510</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -354,7 +354,7 @@ background-color: rgb(211, 21, 14);</string>
     <property name="geometry">
      <rect>
       <x>1190</x>
-      <y>520</y>
+      <y>560</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -372,6 +372,28 @@ color: rgb(0, 0, 0);</string>
      <string>OBSERVAR OC</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnAbrirCarpeta_GG">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>430</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>ABRIR</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -382,8 +404,20 @@ color: rgb(0, 0, 0);</string>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+    <addaction name="actionAbrir_Biblioteca_NP_OC"/>
+   </widget>
+   <addaction name="menuOpciones"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir_Biblioteca_NP_OC">
+   <property name="text">
+    <string>Abrir Biblioteca NP/OC</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
