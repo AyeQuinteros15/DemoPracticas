@@ -29,10 +29,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>391</width>
-      <height>721</height>
+      <x>10</x>
+      <y>0</y>
+      <width>411</width>
+      <height>711</height>
      </rect>
     </property>
     <property name="title">
@@ -41,10 +41,10 @@
     <widget class="QTableWidget" name="tablaDetallesEstado">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>360</y>
        <width>391</width>
-       <height>361</height>
+       <height>341</height>
       </rect>
      </property>
      <column>
@@ -66,9 +66,9 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>330</y>
-       <width>301</width>
+       <width>151</width>
        <height>31</height>
       </rect>
      </property>
@@ -86,7 +86,7 @@
     <widget class="QTableWidget" name="tablaObservaciones">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>50</y>
        <width>391</width>
        <height>281</height>
@@ -94,7 +94,7 @@
      </property>
      <column>
       <property name="text">
-       <string>Nro. NP/OC</string>
+       <string>Nro. OC</string>
       </property>
      </column>
      <column>
@@ -158,10 +158,10 @@
    <widget class="QTableWidget" name="tablaNPasignadasC">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>430</x>
       <y>30</y>
       <width>841</width>
-      <height>231</height>
+      <height>211</height>
      </rect>
     </property>
     <column>
@@ -203,7 +203,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>430</x>
       <y>0</y>
       <width>301</width>
       <height>31</height>
@@ -211,7 +211,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -222,9 +222,9 @@
    <widget class="QPushButton" name="btnVerNP_C">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>60</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -235,9 +235,9 @@
    <widget class="QPushButton" name="btnCrearMC_C">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>130</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -248,8 +248,8 @@
    <widget class="QTableWidget" name="tablaMCactivosRC">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>290</y>
+      <x>430</x>
+      <y>270</y>
       <width>841</width>
       <height>211</height>
      </rect>
@@ -293,15 +293,15 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>260</y>
-      <width>301</width>
+      <x>430</x>
+      <y>240</y>
+      <width>191</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -312,9 +312,9 @@
    <widget class="QPushButton" name="btnAbrirMC_C">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>330</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -325,10 +325,10 @@
    <widget class="QTableWidget" name="tablaOCactivasRC">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>530</y>
+      <x>430</x>
+      <y>510</y>
       <width>841</width>
-      <height>191</height>
+      <height>201</height>
      </rect>
     </property>
     <column>
@@ -380,15 +380,15 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>500</y>
+      <x>430</x>
+      <y>480</y>
       <width>301</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>12</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -399,9 +399,9 @@
    <widget class="QPushButton" name="btnAbrirMC_RC_2">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>560</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -412,35 +412,35 @@
    <widget class="QPushButton" name="btnQuitarOC_C">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>600</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Quitar de mi lista</string>
+     <string>Quitar</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnQuitarMC_C">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>370</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>Quitar de mi lista</string>
+     <string>Quitar</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnObservarNP">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>200</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -451,9 +451,9 @@
    <widget class="QPushButton" name="btnObservarOC">
     <property name="geometry">
      <rect>
-      <x>1250</x>
+      <x>1280</x>
       <y>650</y>
-      <width>111</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -475,9 +475,11 @@
     <property name="title">
      <string>Opciones</string>
     </property>
-    <addaction name="actionCerrar_Sesion"/>
     <addaction name="actionVer_Biblioteca"/>
     <addaction name="actionCrear_Nota_de_Pedido"/>
+    <addaction name="separator"/>
+    <addaction name="actionMi_Perfil"/>
+    <addaction name="actionCerrar_Sesion_2"/>
    </widget>
    <addaction name="menuOpciones"/>
   </widget>
@@ -495,6 +497,16 @@
   <action name="actionCrear_Nota_de_Pedido">
    <property name="text">
     <string>Crear Nota de Pedido</string>
+   </property>
+  </action>
+  <action name="actionMi_Perfil">
+   <property name="text">
+    <string>Mi Perfil</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Sesion_2">
+   <property name="text">
+    <string>Cerrar Sesion</string>
    </property>
   </action>
  </widget>
