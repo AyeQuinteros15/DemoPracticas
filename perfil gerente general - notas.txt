@@ -1,0 +1,23 @@
+perfil gerente general:
+
+- se eliminaron botones de aceptar, rechazar y observer (esas acciones se haran desde dentro de la pantalla de OC. (limpiar codigo)
+- modificar boton ''abrir OC'' para que abra la pantalla de ver OC con los botones de accion.
+- conectar boton Abrir Carpeta a la carpeta correspondiente e archivos de la OC u NP seleccionadas
+- conectar Opcion Crear NP
+- conectar Opcion Mi Perfil
+- conectar Opcion Cerrar Sesion (ya no es un boton)
+- conectar table Mis Notas de Pedido
+- conectar boton Ver NP (abre Ventana NP no modificable)
+- mover el codigo que muestra los datos del usuario, de aqui a Mi Perfil
+
+
+
+Ventana Mi Perfil:
+- conectar table Mis Notas de Pedido Observadas
+- conectar boton Ver Motivo de Observaciones
+- conectar boton Editar NP Observada
+- conectar table Mis NP
+- conectar boton Ver NP
+-conectar boton Crear NP
+- conectar tablaDetallesEstado
+- conectar labels de datos de usuario lblNombreUsuario, lblApellidoUsuario, lblSucursalUsuario, lblSectorUsuario, lblEmailUsuario

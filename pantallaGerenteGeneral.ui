@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1342</width>
+    <width>1340</width>
     <height>768</height>
    </rect>
   </property>
@@ -26,106 +26,12 @@
    <string>Pantalla Principal</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>231</width>
-      <height>341</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="title">
-     <string>Perfil</string>
-    </property>
-    <widget class="QLabel" name="lblNombreUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>111</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblNombreUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblApellidoUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblApellidoUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblSucursalUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblSucursalUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblSectorUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblSectorUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>150</y>
-       <width>211</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblEmailUsuario</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnCerrarSesion_Generador">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>250</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Cerrar Sesion</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>10</y>
-      <width>521</width>
+      <x>440</x>
+      <y>20</y>
+      <width>461</width>
       <height>31</height>
      </rect>
     </property>
@@ -136,15 +42,15 @@
      </font>
     </property>
     <property name="text">
-     <string>NOTAS DE PEDIDO ACTIVAS</string>
+     <string>NOTAS DE PEDIDO PARA FIRMAR</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tablaNPactivasGG">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>40</y>
-      <width>871</width>
+      <x>440</x>
+      <y>50</y>
+      <width>891</width>
       <height>301</height>
      </rect>
     </property>
@@ -190,10 +96,10 @@
    <widget class="QPushButton" name="btnAbrirNP_GG">
     <property name="geometry">
      <rect>
-      <x>1190</x>
-      <y>90</y>
-      <width>111</width>
-      <height>41</height>
+      <x>1230</x>
+      <y>10</y>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -204,63 +110,18 @@ color: rgb(0, 0, 0);</string>
      <string>ABRIR NP</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tablaDetallesEstado">
+   <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>390</y>
-      <width>511</width>
-      <height>331</height>
-     </rect>
-    </property>
-    <column>
-     <property name="text">
-      <string>Usuario</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Fecha/Hora</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>Accion</string>
-     </property>
-    </column>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>360</y>
-      <width>361</width>
+      <x>440</x>
+      <y>370</y>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>11</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Detalles del estado de la NP / OC seleccionada</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>360</y>
-      <width>351</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -271,9 +132,9 @@ color: rgb(0, 0, 0);</string>
    <widget class="QTableWidget" name="tablaOCactivasGG">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>390</y>
-      <width>541</width>
+      <x>440</x>
+      <y>400</y>
+      <width>891</width>
       <height>331</height>
      </rect>
     </property>
@@ -306,79 +167,13 @@ color: rgb(0, 0, 0);</string>
      </property>
     </column>
    </widget>
-   <widget class="QPushButton" name="btnAceptarOC_GG">
+   <widget class="QPushButton" name="btnAbrirOC_GG">
     <property name="geometry">
      <rect>
-      <x>1190</x>
-      <y>510</y>
+      <x>1230</x>
+      <y>360</y>
       <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(23, 212, 9);</string>
-    </property>
-    <property name="text">
-     <string>ACEPTAR OC</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnRechazarOC_GG">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>640</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(211, 21, 14);</string>
-    </property>
-    <property name="text">
-     <string>RECHAZAR OC</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnObservarOC_GG">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>560</y>
-      <width>101</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(223, 226, 25);
-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>OBSERVAR OC</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnAbrirCarpeta_GG">
-    <property name="geometry">
-     <rect>
-      <x>1190</x>
-      <y>430</y>
-      <width>101</width>
-      <height>41</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -391,8 +186,68 @@ color: rgb(0, 0, 0);</string>
 color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
-     <string>ABRIR</string>
+     <string>ABRIR OC</string>
     </property>
+   </widget>
+   <widget class="QPushButton" name="btnAbrirCarpeta_GG">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>360</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>ABRIR CARPETA</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>431</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Trazabilidad de Vista Rapida</string>
+    </property>
+    <widget class="QTableWidget" name="tablaDetallesEstado">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>411</width>
+       <height>671</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Usuario</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fecha/Hora</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Accion</string>
+      </property>
+     </column>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -400,8 +255,8 @@ color: rgb(0, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1342</width>
-     <height>22</height>
+     <width>1340</width>
+     <height>33</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOpciones">
@@ -409,6 +264,10 @@ color: rgb(0, 0, 0);</string>
      <string>Opciones</string>
     </property>
     <addaction name="actionAbrir_Biblioteca_NP_OC"/>
+    <addaction name="actionCrear_NP"/>
+    <addaction name="separator"/>
+    <addaction name="actionMi_Perfil"/>
+    <addaction name="actionCerrar_Sesion_2"/>
    </widget>
    <addaction name="menuOpciones"/>
   </widget>
@@ -416,6 +275,26 @@ color: rgb(0, 0, 0);</string>
   <action name="actionAbrir_Biblioteca_NP_OC">
    <property name="text">
     <string>Abrir Biblioteca NP/OC</string>
+   </property>
+  </action>
+  <action name="actionCrear_NP">
+   <property name="text">
+    <string>Crear NP</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Sesion">
+   <property name="text">
+    <string>Cerrar Sesion</string>
+   </property>
+  </action>
+  <action name="actionMi_Perfil">
+   <property name="text">
+    <string>Mi Perfil</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Sesion_2">
+   <property name="text">
+    <string>Cerrar Sesion</string>
    </property>
   </action>
  </widget>
