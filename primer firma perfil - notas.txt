@@ -1,0 +1,14 @@
+- conectar Mi Perfil en Opciones
+- conectar ventanaAprobacionMontos a Aprobacion por Montos en Opciones
+- conectar Cerrar Sesion en Opciones
+- limpiar codigo de datos del usuario de la pantalla principal, y del boton cerrar session
+- limpiar codigo de la table de Mis NP y del boton Abrir NP de la pantalla principal
+
+ventanaAprobacionMontos
+- conectar lblMonto1 2 y 3
+- conectar btnEditarMontos a ventanaEditarMontos
+
+ventanaEditarMontos
+- darle accion al boton btnGuardarMontos
+* debe guardar los montos de txtMonto1 2 y 3 en la base de datos
+* al clickearlo debe cerrar la Ventana y actualizer los lblMontoN en la ventanaMontosAprobacion automaticamente
