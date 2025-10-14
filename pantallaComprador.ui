@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>Perfil</string>
+     <string>.</string>
     </property>
     <widget class="QTableWidget" name="tablaDetallesEstado">
      <property name="geometry">
@@ -223,7 +223,7 @@
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>60</y>
+      <y>40</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -236,7 +236,7 @@
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>130</y>
+      <y>90</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -313,7 +313,7 @@
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>330</y>
+      <y>290</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -400,7 +400,7 @@
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>560</y>
+      <y>530</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -413,7 +413,7 @@
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>600</y>
+      <y>580</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -426,39 +426,13 @@
     <property name="geometry">
      <rect>
       <x>1280</x>
-      <y>370</y>
+      <y>340</y>
       <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>Quitar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnObservarNP">
-    <property name="geometry">
-     <rect>
-      <x>1280</x>
-      <y>200</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Observar NP</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnObservarOC">
-    <property name="geometry">
-     <rect>
-      <x>1280</x>
-      <y>650</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Observar OC</string>
     </property>
    </widget>
   </widget>
