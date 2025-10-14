@@ -30,119 +30,21 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>80</y>
       <width>361</width>
-      <height>721</height>
+      <height>631</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(225, 225, 225);</string>
-    </property>
     <property name="title">
-     <string>Perfil</string>
+     <string>Trazabilidad de vista rapida</string>
     </property>
-    <widget class="QLabel" name="lblNombreUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>111</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblNombreUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblApellidoUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>50</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblApellidoUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblSucursalUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>90</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblSucursalUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblSectorUsuario">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>101</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblSectorUsuario</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>150</y>
-       <width>211</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>lblEmailUsuario</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnCerrarSesion">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>190</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Cerrar Sesion</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnCrearNP_RC">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>20</y>
-       <width>131</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(235, 239, 13);
-color: rgb(0, 0, 0);</string>
-     </property>
-     <property name="text">
-      <string>CREAR NP APROBADA</string>
-     </property>
-    </widget>
     <widget class="QTableWidget" name="tablaDetallesEstado">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>230</y>
-       <width>361</width>
-       <height>491</height>
+       <x>10</x>
+       <y>20</y>
+       <width>341</width>
+       <height>601</height>
       </rect>
      </property>
      <column>
@@ -160,79 +62,6 @@ color: rgb(0, 0, 0);</string>
        <string>Accion</string>
       </property>
      </column>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>200</y>
-       <width>181</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-       <italic>true</italic>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Detalles de trazabilidad</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnCrearNP_F2">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>80</y>
-       <width>131</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(235, 239, 13);
-color: rgb(0, 0, 0);</string>
-     </property>
-     <property name="text">
-      <string>CREAR NP</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>120</y>
-       <width>201</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>7</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>(Esta NP realizara recorrido de aprobacion normal)</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>60</y>
-       <width>141</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>7</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>(Esta NP se crea ya aprobada por ti)</string>
-     </property>
     </widget>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -262,9 +91,6 @@ color: rgb(0, 0, 0);</string>
       <width>801</width>
       <height>251</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
     </property>
     <column>
      <property name="text">
@@ -328,19 +154,6 @@ color: rgb(0, 0, 0);</string>
      <string>Ver Nota de Pedido</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnObservarNP_RC">
-    <property name="geometry">
-     <rect>
-      <x>1200</x>
-      <y>130</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Observar NP</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnResueltoNP_RC">
     <property name="geometry">
      <rect>
@@ -375,9 +188,6 @@ color: rgb(0, 0, 0);</string>
       <width>881</width>
       <height>171</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
     </property>
     <column>
      <property name="text">
@@ -475,9 +285,6 @@ color: rgb(0, 0, 0);</string>
       <height>211</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(248, 248, 248);</string>
-    </property>
     <column>
      <property name="text">
       <string>Nro O.C.</string>
@@ -532,6 +339,76 @@ color: rgb(0, 0, 0);</string>
      <string>Abrir OC</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnCrearNP_RC">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>CREAR NP APROBADA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>(Esta NP se crea ya aprobada por ti)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCrearNP_F2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>CREAR NP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>50</y>
+      <width>201</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>(Esta NP realizara recorrido de aprobacion normal)</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -539,7 +416,7 @@ color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>1354</width>
-     <height>22</height>
+     <height>33</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOpciones">
@@ -547,6 +424,9 @@ color: rgb(0, 0, 0);</string>
      <string>Opciones</string>
     </property>
     <addaction name="actionAbrir_Biblioteca_NP_OC"/>
+    <addaction name="separator"/>
+    <addaction name="actionMi_Perfil"/>
+    <addaction name="actionCerrar_Sesion"/>
    </widget>
    <addaction name="menuOpciones"/>
   </widget>
@@ -554,6 +434,16 @@ color: rgb(0, 0, 0);</string>
   <action name="actionAbrir_Biblioteca_NP_OC">
    <property name="text">
     <string>Abrir Biblioteca NP/OC</string>
+   </property>
+  </action>
+  <action name="actionMi_Perfil">
+   <property name="text">
+    <string>Mi Perfil</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Sesion">
+   <property name="text">
+    <string>Cerrar Sesion</string>
    </property>
   </action>
  </widget>
