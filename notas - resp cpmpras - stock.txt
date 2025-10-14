@@ -1,0 +1,11 @@
+Perfil Resp Compras.
+
+- Opciones:
+Conectar Mi Perfil
+Conectar Cerrar Sesion (ya no hay boton para eso)
+- cambiar la accion de Observar NP de el boton externo (ya no existe) a dentro de la NP
+
+
+ventanaStock
+
+conectar boton Eliminar Item (btnEliminarStock)
