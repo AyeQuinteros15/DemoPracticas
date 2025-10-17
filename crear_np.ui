@@ -54,7 +54,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/logo_info.jpg</pixmap>
+     <pixmap resource="../../../img/imagenes.qrc">:/xy/logo_info.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -230,7 +230,7 @@
      <rect>
       <x>10</x>
       <y>440</y>
-      <width>581</width>
+      <width>781</width>
       <height>81</height>
      </rect>
     </property>
@@ -303,7 +303,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
+      <pixmap>:/xy/firma_digital_img.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -382,7 +382,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
+      <pixmap>:/xy/firma_digital_img.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -425,9 +425,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>370</y>
+      <y>360</y>
       <width>101</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -582,9 +582,9 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>370</y>
+      <y>360</y>
       <width>131</width>
-      <height>31</height>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -592,39 +592,6 @@
     </property>
     <property name="text">
      <string>Ver Archivos Adjuntos</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnGuardarCambiosItems_NP">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>360</y>
-      <width>111</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>Guardar Cambios</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnNotas_NP">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>460</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(223, 209, 10);
-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>NOTAS NP</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblEstadoNP_NP">
@@ -672,7 +639,7 @@ color: rgb(0, 0, 0);</string>
     </property>
     <item>
      <property name="text">
-      <string>TUCUMAN</string>
+      <string>TUCUMÁN</string>
      </property>
     </item>
     <item>
@@ -682,7 +649,7 @@ color: rgb(0, 0, 0);</string>
     </item>
     <item>
      <property name="text">
-      <string>ORAN</string>
+      <string>ORÁN</string>
      </property>
     </item>
     <item>
@@ -697,7 +664,7 @@ color: rgb(0, 0, 0);</string>
     </item>
     <item>
      <property name="text">
-      <string>SANTIEGO</string>
+      <string>SANTIAGO</string>
      </property>
     </item>
     <item>
@@ -707,7 +674,7 @@ color: rgb(0, 0, 0);</string>
     </item>
     <item>
      <property name="text">
-      <string>CONCEPCION</string>
+      <string>CONCEPCIÓN</string>
      </property>
     </item>
     <item>
@@ -722,7 +689,7 @@ color: rgb(0, 0, 0);</string>
     </item>
     <item>
      <property name="text">
-      <string>CORDOBA</string>
+      <string>CÓRDOBA</string>
      </property>
     </item>
     <item>
@@ -805,6 +772,16 @@ color: rgb(0, 0, 0);</string>
       <string>SUC. BANCO</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>EDIFICIO PJE BERTRÉS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EDIFICIO SANTA FÉ</string>
+     </property>
+    </item>
    </widget>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
@@ -832,7 +809,7 @@ color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>803</width>
-     <height>22</height>
+     <height>33</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOpciones">
@@ -875,8 +852,10 @@ color: rgb(0, 0, 0);</string>
   </action>
  </widget>
  <resources>
-  <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc"/>
-  <include location="img/imagenes.qrc"/>
+  <include location="../../../img/imagenes.qrc"/>
+  <include location="../../../img/imagenes.qrc"/>
+  <include location="../../../img/imagenes.qrc"/>
+  <include location="../Desktop/DemoSuCredito4/img/imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>
