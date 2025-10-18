@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>pantallaCrearNP</class>
- <widget class="QMainWindow" name="pantallaCrearNP">
+ <class>pantallaEditarNP_RC</class>
+ <widget class="QMainWindow" name="pantallaEditarNP_RC">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>803</width>
-    <height>730</height>
+    <height>758</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Crear Nota de Pedido</string>
+   <string>Nota de Pedido - Gerencia General</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -58,16 +58,6 @@
     </property>
     <property name="scaledContents">
      <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QDateEdit" name="fechaEntregaCrearNP">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>90</y>
-      <width>110</width>
-      <height>22</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -209,28 +199,12 @@
      </property>
     </column>
    </widget>
-   <widget class="QPushButton" name="btnAgregarItem">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>360</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>Agregar item</string>
-    </property>
-   </widget>
    <widget class="QTextEdit" name="txtObservacionesCrearNP">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>440</y>
-      <width>781</width>
+      <width>761</width>
       <height>81</height>
      </rect>
     </property>
@@ -425,9 +399,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>360</y>
+      <y>370</y>
       <width>101</width>
-      <height>41</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -435,44 +409,6 @@
     </property>
     <property name="text">
      <string>Adjuntar Archivo</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnFirmarSolicitante_NP">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>650</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>Firmar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnFirmarGerencia_NP">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>650</y>
-      <width>75</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="text">
-     <string>Firmar</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblSucursalUsuario_NP">
@@ -582,9 +518,9 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>360</y>
+      <y>370</y>
       <width>131</width>
-      <height>41</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -592,6 +528,23 @@
     </property>
     <property name="text">
      <string>Ver Archivos Adjuntos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNotas_NP">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>370</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(223, 209, 10);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>VER COMENTARIOS</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblEstadoNP_NP">
@@ -615,174 +568,6 @@
      <string>ESTADO NP</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnEliminarItem_NP">
-    <property name="geometry">
-     <rect>
-      <x>680</x>
-      <y>360</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Eliminar Item</string>
-    </property>
-   </widget>
-   <widget class="QComboBox" name="comboBoxCentroCosto_NP">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>140</y>
-      <width>191</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <item>
-     <property name="text">
-      <string>TUCUMÁN</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SALTA</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ORÁN</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>JUJUY</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SAN PEDRO</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SANTIAGO</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>LA BANDA</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CONCEPCIÓN</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>GOMEZ PARDO</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>HML ROCA</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CÓRDOBA</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CASA CENTRAL</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SISTEMAS</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>OPERACIONES</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>RIESGO</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ADMINISTRACION</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>FINANZAS</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>RR. HH.</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>COBRANZAS</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CALL CENTER ATENCION</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CALL CENTER COBRANZAS</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>GERENCIA</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>COBRANZAS DEL NOROESTE</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>TESORERIA</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>VENTAS</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>BANCO</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SUC. BANCO</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>EDIFICIO PJE BERTRÉS</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>EDIFICIO SANTA FÉ</string>
-     </property>
-    </item>
-   </widget>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
@@ -802,10 +587,70 @@
      <string>Centro Costo:</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnRechazarNP_GG">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>660</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(223, 0, 0);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>RECHAZAR NP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFechaEntregaRequerida">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>90</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>lblFechaEntregaRequerida</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCentroCosto">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>140</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>lblCentroCosto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnObservarNP_GG">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>660</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 0);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>OBSERVAR NP</string>
+    </property>
+   </widget>
    <widget class="QCheckBox" name="checkBoxPrioridad">
     <property name="geometry">
      <rect>
-      <x>630</x>
+      <x>640</x>
       <y>90</y>
       <width>78</width>
       <height>20</height>
@@ -836,9 +681,7 @@
      <addaction name="actionPDF_Completo"/>
      <addaction name="actionPDF_Proveedor"/>
     </widget>
-    <addaction name="actionGenerar_NP"/>
     <addaction name="menuGuardar_en_PDF"/>
-    <addaction name="actionCancelar_NP"/>
    </widget>
    <addaction name="menuOpciones"/>
   </widget>
@@ -868,7 +711,7 @@
   <include location="../../../img/imagenes.qrc"/>
   <include location="../../../img/imagenes.qrc"/>
   <include location="../../../img/imagenes.qrc"/>
-  <include location="../Desktop/DemoSuCredito4/img/imagenes.qrc"/>
+  <include location="../../../img/imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>
