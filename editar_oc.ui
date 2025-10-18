@@ -150,11 +150,6 @@
     </column>
     <column>
      <property name="text">
-      <string>IB 1%</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
       <string>Otros imp. %</string>
      </property>
     </column>
@@ -227,7 +222,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/logo_info.jpg</pixmap>
+     <pixmap>:/xy/logo_info.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -273,7 +268,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
+      <pixmap>:/xy/firma_digital_img.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -331,7 +326,7 @@
      <string>Fecha limite:</string>
     </property>
    </widget>
-   <widget class="QDateEdit" name="fechaRecepcionOC">
+   <widget class="QDateEdit" name="fechaLimiteOC">
     <property name="geometry">
      <rect>
       <x>820</x>
@@ -614,7 +609,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
+      <pixmap>:/xy/firma_digital_img.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -674,7 +669,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
+      <pixmap>:/xy/firma_digital_img.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -734,7 +729,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc">:/xy/firma_digital_img.jpg</pixmap>
+      <pixmap>:/xy/firma_digital_img.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -1290,7 +1285,7 @@ color: rgb(8, 8, 8);</string>
      <x>0</x>
      <y>0</y>
      <width>1366</width>
-     <height>22</height>
+     <height>33</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOpciones">
@@ -1333,7 +1328,7 @@ color: rgb(8, 8, 8);</string>
   </action>
  </widget>
  <resources>
-  <include location="../Demo SuCredito_Ezequiel/DemoSuCredito/DemoSuCredito/img/imagenes.qrc"/>
+  <include location="../../img/imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>
