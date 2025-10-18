@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="img/imagenes.qrc">:/xy/logo_info.jpg</pixmap>
+     <pixmap>:/xy/logo_info.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -339,19 +339,6 @@
      </property>
     </column>
    </widget>
-   <widget class="QPushButton" name="btnGuardarItems_MC">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>680</y>
-      <width>111</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Guardar Cambios</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnGenerarOC_MC">
     <property name="geometry">
      <rect>
@@ -526,7 +513,7 @@
    <widget class="QPushButton" name="btnAgregarItemTabla_MC">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>50</x>
       <y>680</y>
       <width>111</width>
       <height>31</height>
@@ -543,7 +530,7 @@
      <x>0</x>
      <y>0</y>
      <width>1366</width>
-     <height>22</height>
+     <height>33</height>
     </rect>
    </property>
   </widget>
