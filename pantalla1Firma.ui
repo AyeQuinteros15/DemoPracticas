@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pantalla1Firma</class>
+ <widget class="QMainWindow" name="pantalla1Firma">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1354</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1366</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Pantalla Principal - 1er Firma</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>421</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Trazabilidad de vista rapida</string>
+    </property>
+    <widget class="QTableWidget" name="tablaDetallesEstado">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>401</width>
+       <height>611</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Usuario</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fecha/Hora</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Accion</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QTableWidget" name="tablaOCactivas1F">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>901</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Nro O.C.</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descripcion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total Factura</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha Emision</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sector</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Estado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha Limite</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>0</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ORDENES DE COMPRA A FIRMAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAbrirOC_1F">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>10</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Abrir OC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCrearNP_RC">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>CREAR NP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>(Esta NP realizara recorrido de</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCrearNPaprobada_F2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(235, 239, 13);
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>CREAR NP APROBADA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>50</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>(Esta NP va directamente al Resp. de Compras)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>aprobacion normal)</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>380</y>
+      <width>901</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>OC Observadas</string>
+    </property>
+    <widget class="QTableWidget" name="tablaObservaciones">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>881</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Nro. OC</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Descripcion</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fecha Devolucion</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnVerMotivo">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>10</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ver motivo</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnEditarObservada">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>10</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Editar OC</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1354</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpciones">
+    <property name="title">
+     <string>Opciones</string>
+    </property>
+    <addaction name="actionUsar_perfil_Resp_Compras"/>
+    <addaction name="actionAbri_Biblioteca_NP_OC"/>
+    <addaction name="actionAprobacion_por_Montos"/>
+    <addaction name="separator"/>
+    <addaction name="actionMi_Perfil"/>
+    <addaction name="actionCerrar_Sesion"/>
+   </widget>
+   <addaction name="menuOpciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUsar_perfil_Resp_Compras">
+   <property name="text">
+    <string>Usar derechos Resp. Compras</string>
+   </property>
+  </action>
+  <action name="actionAbri_Biblioteca_NP_OC">
+   <property name="text">
+    <string>Abri Biblioteca NP/OC</string>
+   </property>
+  </action>
+  <action name="actionAprobacion_por_Montos">
+   <property name="text">
+    <string>Aprobacion por Montos</string>
+   </property>
+  </action>
+  <action name="actionMi_Perfil">
+   <property name="text">
+    <string>Mi Perfil</string>
+   </property>
+  </action>
+  <action name="actionCerrar_Sesion">
+   <property name="text">
+    <string>Cerrar Sesion</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
